@@ -14,9 +14,6 @@ namespace GestaoAlojamentosTuristicos
         private int numeroCliente;
         #endregion
 
-        #region Methods
-        #endregion
-
         #region Constructors
         public Cliente(
             string nome,
@@ -28,6 +25,9 @@ namespace GestaoAlojamentosTuristicos
         {
             numeroCliente = ++contadorClientes;
         }
+        #endregion
+
+        #region Methods
         #endregion
 
         #region Properties
@@ -46,7 +46,7 @@ namespace GestaoAlojamentosTuristicos
         #region OtherMethods
         #endregion
 
-        #region Deconstrutor
+        #region Destructor
         ~Cliente()
         {
         }

@@ -16,15 +16,12 @@ namespace GestaoAlojamentosTuristicos
         private string email;
         #endregion
 
-        #region Methods
-        #endregion
-
         #region Constructors
         public Pessoa(
-            string nome, 
-            DateTime dataNascimento, 
-            string numeroIdentificacao, 
-            string telefone, 
+            string nome,
+            DateTime dataNascimento,
+            string numeroIdentificacao,
+            string telefone,
             string email)
         {
             Nome = nome;
@@ -33,6 +30,9 @@ namespace GestaoAlojamentosTuristicos
             Telefone = telefone;
             Email = email;
         }
+        #endregion
+
+        #region Methods
         #endregion
 
         #region Properties

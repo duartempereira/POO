@@ -8,5 +8,25 @@ namespace GestaoAlojamentosTuristicos
 {
     internal class Alojamento
     {
+        #region Attributes
+        #endregion
+
+        #region Constructors
+        #endregion
+
+        #region Methods
+        #endregion
+
+        #region Properties
+        #endregion
+
+        #region Overrides
+        #endregion
+
+        #region OtherMethods
+        #endregion
+
+        #region Destructor
+        #endregion
     }
 }

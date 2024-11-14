@@ -10,17 +10,20 @@ namespace GestaoAlojamentosTuristicos
     {
         static void Main(string[] args)
         {
-            // Criação de um Cliente
-            Cliente cliente = new Cliente(
-                "Duarte Pereira",
-                new DateTime(2003, 11, 12), // Data de nascimento
-                "271234567",
-                "+351 938123456",
-                "duarte.pereira@email.com"
-            );
+            // Criando o gestor de clientes
+            GestorClientes gestorClientes = new GestorClientes();
 
-            // Mostrar as informações do Cliente
-            cliente.ExibirInformacoes();
+            // Adicionando clientes ao sistema (exemplo)
+            gestorClientes.AdicionarCliente(new Cliente("Duarte Pereira", new DateTime(2003, 11, 12), "271234567", "+351 938123456", "duarte.pereira@gmail.com"));
+            gestorClientes.AdicionarCliente(new Cliente("Maria Silva", new DateTime(1990, 5, 15), "111234567", "+351 912345678", "maria.silva@email.com"));
+
+            gestorClientes.ListarClientes();
+
+            // Definir o número de identificação manualmente
+            string numeroIdentificacao = "111234567";  // Exemplo de número de identificação
+
+            // Usando o método MostraClienteEncontrado para buscar e mostrar o cliente
+            gestorClientes.MostrarClienteEncontrado(numeroIdentificacao);
 
             // Pausa o programa para ver o resultado na consola
             Console.ReadLine();
