@@ -9,9 +9,9 @@ namespace GestaoAlojamentosTuristicos
     public class Cliente : Pessoa
     {
         #region Attributes
-        static private int contadorClientes = 0;
+        static private int numeroAtualClientes = 0;
 
-        private int numeroCliente;
+        private int idCliente;
         #endregion
 
         #region Constructors
@@ -23,7 +23,7 @@ namespace GestaoAlojamentosTuristicos
             string telefone)
             : base(nome, dataNascimento, numeroIdentificacao, email, telefone)
         {
-            numeroCliente = ++contadorClientes;
+            idCliente = ++numeroAtualClientes;
         }
         #endregion
 
@@ -37,7 +37,7 @@ namespace GestaoAlojamentosTuristicos
         #region Overrides
         public override void ExibirInformacoes()
         {
-            Console.WriteLine($"Numero do cliente: {numeroCliente}");
+            Console.WriteLine($"ID Cliente: {idCliente}");
 
             base.ExibirInformacoes();
         }
