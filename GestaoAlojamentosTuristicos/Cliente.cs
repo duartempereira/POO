@@ -28,10 +28,14 @@ namespace GestaoAlojamentosTuristicos
         #endregion
 
         #region Methods
+        // Método para retornar o ID do Cliente
+        public int GetIdCliente()
+        {
+            return idCliente;
+        }
         #endregion
 
         #region Properties
-
         #endregion
 
         #region Overrides

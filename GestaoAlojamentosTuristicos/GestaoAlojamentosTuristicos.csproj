@@ -47,6 +47,7 @@
     <Compile Include="Cliente.cs" />
     <Compile Include="GestorAlojamentos.cs" />
     <Compile Include="GestorClientes.cs" />
+    <Compile Include="GestorReservas.cs" />
     <Compile Include="Pessoa.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
