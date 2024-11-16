@@ -28,7 +28,7 @@ namespace GestaoAlojamentosTuristicos
             gestorClientes.ListarClientes();
 
             // 5. Procurar e Exibir Cliente por Número de Identificação
-            string numeroIdentificacao = "111234567";  // Exemplo de número de identificação
+            string numeroIdentificacao = "271234567";  // Exemplo de número de identificação
             Console.WriteLine($"\n--- Procurar Cliente com Número de Identificação: {numeroIdentificacao} ---");
             gestorClientes.MostrarClienteEncontrado(numeroIdentificacao);
 
@@ -42,9 +42,9 @@ namespace GestaoAlojamentosTuristicos
             gestorAlojamentos.ListarAlojamentos();
 
             // 8. Criando uma Reserva
-            Cliente clienteReserva = gestorClientes.ProcurarCliente("111234567");  // Cliente para a reserva
+            Cliente clienteReserva = gestorClientes.ProcurarCliente("271234567");  // Cliente para a reserva
             Alojamento alojamentoReserva = gestorAlojamentos.ProcurarAlojamento(idAlojamento);  // Alojamento para a reserva
-            Reserva novaReserva = new Reserva(clienteReserva, alojamentoReserva, new DateTime(2024, 12, 20), new DateTime(2024, 12, 25));
+            Reserva novaReserva = new Reserva(new DateTime(2024, 12, 20), new DateTime(2024, 12, 25), clienteReserva, alojamentoReserva); 
             gestorReservas.AdicionarReserva(novaReserva);  // Adicionando a reserva
 
             // 9. Listar todas as Reservas

@@ -28,11 +28,11 @@ namespace GestaoAlojamentosTuristicos
             {
                 alojamentos[numeroAtualAlojamentos] = alojamento;
                 numeroAtualAlojamentos++;
-                return 0; // Indica que o cliente foi adicionado com sucesso
+                return 0; // Indica que o alojamento foi adicionado com sucesso
             }
             else
             {
-                return 1; // Indica que o limite de clientes foi atingido
+                return 1; // Indica que o limite de alojamentos foi atingido
             }
         }
 
@@ -54,13 +54,13 @@ namespace GestaoAlojamentosTuristicos
 
         public void MostrarAlojamentoEncontrado(int idAlojamento)
         {
-            // Chama o método ProcurarCliente para procurar o cliente
+            // Chama o método ProcurarAlojamento para procurar o alojamento
             Alojamento alojamentoEncontrado = ProcurarAlojamento(idAlojamento);
 
-            // Verifica se o cliente foi encontrado
+            // Verifica se o alojamento foi encontrado
             if (alojamentoEncontrado != null)
             {
-                // Se o cliente for encontrado, exibe as suas informações
+                // Se o alojamento for encontrado, exibe as suas informações
                 alojamentoEncontrado.ExibirInformacoes();
             }
             else
@@ -97,6 +97,9 @@ namespace GestaoAlojamentosTuristicos
         #endregion
 
         #region Destructor
+        ~GestorAlojamentos()
+        {
+        }
         #endregion
     }
 }

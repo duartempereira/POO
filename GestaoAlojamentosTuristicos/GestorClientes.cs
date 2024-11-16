@@ -97,6 +97,9 @@ namespace GestaoAlojamentosTuristicos
         #endregion
 
         #region Destructor
+        ~GestorClientes()
+        {
+        }
         #endregion
     }
 }

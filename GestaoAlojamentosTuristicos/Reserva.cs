@@ -48,6 +48,7 @@ namespace GestaoAlojamentosTuristicos
             Console.WriteLine($"Data de Início: {dataInicio:dd/MM/yyyy}");
             Console.WriteLine($"Data de Fim: {dataFim:dd/MM/yyyy}");
             Console.WriteLine($"Preço Total: {precoTotal:C}");
+            Console.WriteLine($"Número de Dias: {NumeroDiasEstadia}");
         }
         #endregion
 
@@ -87,6 +88,14 @@ namespace GestaoAlojamentosTuristicos
             get { return precoTotal; }
             set { precoTotal = value; }
         }
+
+        public int NumeroDiasEstadia
+        {
+            get
+            {
+                return (DataFim - DataInicio).Days; // Calcula a diferença em dias
+            }
+        }
         #endregion
 
         #region Overrides
@@ -96,6 +105,9 @@ namespace GestaoAlojamentosTuristicos
         #endregion
 
         #region Destructor
+        ~Reserva()
+        {
+        }
         #endregion
     }
 }

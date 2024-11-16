@@ -66,6 +66,26 @@ namespace GestaoAlojamentosTuristicos
             }
         }
 
+        public bool VerificarDisponibilidade(int idAlojamento, DateTime dataInicio, DateTime dataFim)
+        {
+            // Itera por todas as reservas
+            for (int i = 0; i < numeroAtualReservas; i++)
+            {
+                Reserva reserva = reservas[i];
+
+                // Verifica se o alojamento corresponde ao ID fornecido
+                if (reserva.AlojamentoReservado.IdAlojamento == idAlojamento)
+                {
+                    // Verifica se existe sobreposição de datas
+                    if (dataInicio < reserva.DataFim && dataFim > reserva.DataInicio)
+                    {
+                        return false; // Não disponível
+                    }
+                }
+            }
+            return true; // Disponível
+        }
+
         public void ListarReservas()
         {
             if (numeroAtualReservas == 0)

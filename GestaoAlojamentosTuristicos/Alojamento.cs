@@ -15,6 +15,12 @@ namespace GestaoAlojamentosTuristicos
         Hostel
     }
 
+    public enum EstadoAlojamento
+    {
+        Disponivel,
+        Ocupado
+    }
+
     public class Alojamento
     {
         #region Attributes
@@ -23,6 +29,7 @@ namespace GestaoAlojamentosTuristicos
         private decimal precoPorNoite;
         private string localizacao;
         private Tipo tipo;  // Tipo agora é do tipo enum
+        private EstadoAlojamento estado;
         private static int numeroAtualAlojamentos = 0; // Atributo estático para controlar o próximo ID
         #endregion
 
@@ -68,6 +75,12 @@ namespace GestaoAlojamentosTuristicos
             get { return tipo; }
             set { tipo = value; }
         }
+
+        public EstadoAlojamento Estado
+        {
+            get { return estado; }
+            set { estado = value; }
+        }
         #endregion
 
         #region Overrides
@@ -80,6 +93,7 @@ namespace GestaoAlojamentosTuristicos
             Console.WriteLine($"Preço por Noite: {PrecoPorNoite} EUR");
             Console.WriteLine($"Localização: {Localizacao}");
             Console.WriteLine($"Tipo: {Tipo}");
+            Console.WriteLine($"Estado: {Estado}"); // Mostrar estado
         }
         #endregion
 
