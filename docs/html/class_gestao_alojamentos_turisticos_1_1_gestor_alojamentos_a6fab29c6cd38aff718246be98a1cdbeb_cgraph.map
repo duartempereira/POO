@@ -1,0 +1,5 @@
+<map id="GestaoAlojamentosTuristicos.GestorAlojamentos.ListarAlojamentos" name="GestaoAlojamentosTuristicos.GestorAlojamentos.ListarAlojamentos">
+<area shape="rect" id="Node000001" title="Lista todos os alojamentos registados no sistema." alt="" coords="5,5,246,48"/>
+<area shape="rect" id="Node000002" href="$class_gestao_alojamentos_turisticos_1_1_alojamento.html#a575b93356f9f3e76bdf2e1c603a4490a" title="Exibe informações detalhadas do alojamento na consola." alt="" coords="294,5,490,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="246,24,278,24,278,29,246,29"/>
+</map>

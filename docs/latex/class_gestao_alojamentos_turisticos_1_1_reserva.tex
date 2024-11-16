@@ -1,0 +1,238 @@
+\doxysection{Referência à classe Gestao\+Alojamentos\+Turisticos.\+Reserva}
+\label{class_gestao_alojamentos_turisticos_1_1_reserva}\index{GestaoAlojamentosTuristicos.Reserva@{GestaoAlojamentosTuristicos.Reserva}}
+
+
+Representa uma reserva de alojamento feita por um cliente.  
+
+
+\doxysubsubsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Reserva} (Date\+Time data\+Inicio, Date\+Time data\+Fim, \textbf{ Cliente} cliente, \textbf{ Alojamento} alojamento\+Reservado)
+\begin{DoxyCompactList}\small\item\em Construtor para a criação de uma nova reserva. \end{DoxyCompactList}\item 
+decimal \textbf{ Calcular\+Preco\+Total} ()
+\begin{DoxyCompactList}\small\item\em Calcula o preço total da reserva com base nas noites de estadia. \end{DoxyCompactList}\item 
+void \textbf{ Exibir\+Informacoes} ()
+\begin{DoxyCompactList}\small\item\em Exibe as informações detalhadas sobre a reserva. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Propriedades}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ Id\+Reserva}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Obtém ou define o ID da reserva. \end{DoxyCompactList}\item 
+Date\+Time \textbf{ Data\+Inicio}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Obtém ou define a data de início da reserva. \end{DoxyCompactList}\item 
+Date\+Time \textbf{ Data\+Fim}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Obtém ou define a data de fim da reserva. \end{DoxyCompactList}\item 
+\textbf{ Cliente} \textbf{ Cliente}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Obtém ou define o cliente da reserva. \end{DoxyCompactList}\item 
+\textbf{ Alojamento} \textbf{ Alojamento\+Reservado}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Obtém ou define o alojamento reservado. \end{DoxyCompactList}\item 
+decimal \textbf{ Preco\+Total}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Obtém ou define o preço total da reserva. \end{DoxyCompactList}\item 
+int \textbf{ Numero\+Dias\+Estadia}\hspace{0.3cm}{\ttfamily  [get]}
+\begin{DoxyCompactList}\small\item\em Obtém o número de dias de estadia. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Representa uma reserva de alojamento feita por um cliente. 
+
+Esta classe contém informações detalhadas sobre uma reserva, incluindo a data de início e fim da estadia, o cliente que fez a reserva, o alojamento reservado e o preço total da reserva. A classe também calcula o preço total com base no número de noites e no preço por noite do alojamento reservado. 
+
+Definido na linha \textbf{ 25} do ficheiro \textbf{ Reserva.\+cs}.
+
+
+
+\doxysubsection{Documentação dos Construtores \& Destrutor}
+\index{GestaoAlojamentosTuristicos.Reserva@{GestaoAlojamentosTuristicos.Reserva}!Reserva@{Reserva}}
+\index{Reserva@{Reserva}!GestaoAlojamentosTuristicos.Reserva@{GestaoAlojamentosTuristicos.Reserva}}
+\doxysubsubsection{Reserva()}
+{\footnotesize\ttfamily \label{class_gestao_alojamentos_turisticos_1_1_reserva_a549f19e0a316f6a5fe4d69b7fed1de61} 
+Gestao\+Alojamentos\+Turisticos.\+Reserva.\+Reserva (\begin{DoxyParamCaption}\item[{Date\+Time}]{data\+Inicio}{, }\item[{Date\+Time}]{data\+Fim}{, }\item[{\textbf{ Cliente}}]{cliente}{, }\item[{\textbf{ Alojamento}}]{alojamento\+Reservado}{}\end{DoxyParamCaption})}
+
+
+
+Construtor para a criação de uma nova reserva. 
+
+Este construtor inicializa os dados da reserva, incluindo o ID único, as datas de início e fim, o cliente, o alojamento reservado e calcula o preço total da reserva.
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em data\+Inicio} & Data de início da reserva. \\
+\hline
+{\em data\+Fim} & Data de fim da reserva. \\
+\hline
+{\em cliente} & \doxyref{Cliente}{p. }{class_gestao_alojamentos_turisticos_1_1_cliente} que está a fazer a reserva. \\
+\hline
+{\em alojamento\+Reservado} & \doxyref{Alojamento}{p. }{class_gestao_alojamentos_turisticos_1_1_alojamento} que está a ser reservado. \\
+\hline
+\end{DoxyParams}
+
+
+Definido na linha \textbf{ 47} do ficheiro \textbf{ Reserva.\+cs}.
+
+Grafo de chamadas desta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_gestao_alojamentos_turisticos_1_1_reserva_a549f19e0a316f6a5fe4d69b7fed1de61_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Documentação das funções}
+\index{GestaoAlojamentosTuristicos.Reserva@{GestaoAlojamentosTuristicos.Reserva}!CalcularPrecoTotal@{CalcularPrecoTotal}}
+\index{CalcularPrecoTotal@{CalcularPrecoTotal}!GestaoAlojamentosTuristicos.Reserva@{GestaoAlojamentosTuristicos.Reserva}}
+\doxysubsubsection{CalcularPrecoTotal()}
+{\footnotesize\ttfamily \label{class_gestao_alojamentos_turisticos_1_1_reserva_a8346ab5eddc047e98f4796d8c024cd6c} 
+decimal Gestao\+Alojamentos\+Turisticos.\+Reserva.\+Calcular\+Preco\+Total (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Calcula o preço total da reserva com base nas noites de estadia. 
+
+Este método calcula o preço total multiplicando o número de noites pela tarifa diária do alojamento.
+
+\begin{DoxyReturn}{Retorna}
+O preço total da reserva em formato decimal. 
+\end{DoxyReturn}
+
+
+Definido na linha \textbf{ 65} do ficheiro \textbf{ Reserva.\+cs}.
+
+Este é o diagrama das funções que utilizam esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_gestao_alojamentos_turisticos_1_1_reserva_a8346ab5eddc047e98f4796d8c024cd6c_icgraph}
+\end{center}
+\end{figure}
+\index{GestaoAlojamentosTuristicos.Reserva@{GestaoAlojamentosTuristicos.Reserva}!ExibirInformacoes@{ExibirInformacoes}}
+\index{ExibirInformacoes@{ExibirInformacoes}!GestaoAlojamentosTuristicos.Reserva@{GestaoAlojamentosTuristicos.Reserva}}
+\doxysubsubsection{ExibirInformacoes()}
+{\footnotesize\ttfamily \label{class_gestao_alojamentos_turisticos_1_1_reserva_a1156c418c4edd135f4e3e8340cbb0a14} 
+void Gestao\+Alojamentos\+Turisticos.\+Reserva.\+Exibir\+Informacoes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Exibe as informações detalhadas sobre a reserva. 
+
+Este método imprime no console as informações da reserva, incluindo o ID da reserva, nome do cliente, nome do alojamento, datas de início e fim, preço total, e número de dias de estadia. 
+
+Definido na linha \textbf{ 75} do ficheiro \textbf{ Reserva.\+cs}.
+
+Este é o diagrama das funções que utilizam esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_gestao_alojamentos_turisticos_1_1_reserva_a1156c418c4edd135f4e3e8340cbb0a14_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Documentação das propriedades}
+\index{GestaoAlojamentosTuristicos.Reserva@{GestaoAlojamentosTuristicos.Reserva}!AlojamentoReservado@{AlojamentoReservado}}
+\index{AlojamentoReservado@{AlojamentoReservado}!GestaoAlojamentosTuristicos.Reserva@{GestaoAlojamentosTuristicos.Reserva}}
+\doxysubsubsection{AlojamentoReservado}
+{\footnotesize\ttfamily \label{class_gestao_alojamentos_turisticos_1_1_reserva_a373e962e64689f1a4671468e5b1bfc70} 
+\textbf{ Alojamento} Gestao\+Alojamentos\+Turisticos.\+Reserva.\+Alojamento\+Reservado\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Obtém ou define o alojamento reservado. 
+
+O alojamento é o espaço turístico que o cliente escolheu para a sua estadia. 
+
+Definido na linha \textbf{ 134} do ficheiro \textbf{ Reserva.\+cs}.
+
+\index{GestaoAlojamentosTuristicos.Reserva@{GestaoAlojamentosTuristicos.Reserva}!Cliente@{Cliente}}
+\index{Cliente@{Cliente}!GestaoAlojamentosTuristicos.Reserva@{GestaoAlojamentosTuristicos.Reserva}}
+\doxysubsubsection{Cliente}
+{\footnotesize\ttfamily \label{class_gestao_alojamentos_turisticos_1_1_reserva_ae163d6769f64aba4ae512f29b5bd71e3} 
+\textbf{ Cliente} Gestao\+Alojamentos\+Turisticos.\+Reserva.\+Cliente\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Obtém ou define o cliente da reserva. 
+
+O cliente é a pessoa que fez a reserva. 
+
+Definido na linha \textbf{ 124} do ficheiro \textbf{ Reserva.\+cs}.
+
+\index{GestaoAlojamentosTuristicos.Reserva@{GestaoAlojamentosTuristicos.Reserva}!DataFim@{DataFim}}
+\index{DataFim@{DataFim}!GestaoAlojamentosTuristicos.Reserva@{GestaoAlojamentosTuristicos.Reserva}}
+\doxysubsubsection{DataFim}
+{\footnotesize\ttfamily \label{class_gestao_alojamentos_turisticos_1_1_reserva_afbc5dff77c4bb62dc55cec3011f468bc} 
+Date\+Time Gestao\+Alojamentos\+Turisticos.\+Reserva.\+Data\+Fim\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Obtém ou define a data de fim da reserva. 
+
+A data de fim é usada para calcular o número de noites e o preço total. 
+
+Definido na linha \textbf{ 114} do ficheiro \textbf{ Reserva.\+cs}.
+
+\index{GestaoAlojamentosTuristicos.Reserva@{GestaoAlojamentosTuristicos.Reserva}!DataInicio@{DataInicio}}
+\index{DataInicio@{DataInicio}!GestaoAlojamentosTuristicos.Reserva@{GestaoAlojamentosTuristicos.Reserva}}
+\doxysubsubsection{DataInicio}
+{\footnotesize\ttfamily \label{class_gestao_alojamentos_turisticos_1_1_reserva_a3c37f6d7b160eb94504c2e47a674de92} 
+Date\+Time Gestao\+Alojamentos\+Turisticos.\+Reserva.\+Data\+Inicio\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Obtém ou define a data de início da reserva. 
+
+A data de início é usada para calcular o número de noites e o preço total. 
+
+Definido na linha \textbf{ 104} do ficheiro \textbf{ Reserva.\+cs}.
+
+\index{GestaoAlojamentosTuristicos.Reserva@{GestaoAlojamentosTuristicos.Reserva}!IdReserva@{IdReserva}}
+\index{IdReserva@{IdReserva}!GestaoAlojamentosTuristicos.Reserva@{GestaoAlojamentosTuristicos.Reserva}}
+\doxysubsubsection{IdReserva}
+{\footnotesize\ttfamily \label{class_gestao_alojamentos_turisticos_1_1_reserva_abc32a14e6ce7720a1cea080e25c1c028} 
+int Gestao\+Alojamentos\+Turisticos.\+Reserva.\+Id\+Reserva\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Obtém ou define o ID da reserva. 
+
+O ID da reserva é gerado automaticamente e não pode ser alterado manualmente. 
+
+Definido na linha \textbf{ 94} do ficheiro \textbf{ Reserva.\+cs}.
+
+\index{GestaoAlojamentosTuristicos.Reserva@{GestaoAlojamentosTuristicos.Reserva}!NumeroDiasEstadia@{NumeroDiasEstadia}}
+\index{NumeroDiasEstadia@{NumeroDiasEstadia}!GestaoAlojamentosTuristicos.Reserva@{GestaoAlojamentosTuristicos.Reserva}}
+\doxysubsubsection{NumeroDiasEstadia}
+{\footnotesize\ttfamily \label{class_gestao_alojamentos_turisticos_1_1_reserva_a845ba7d117eb10c3a8e5bc1ecece3df9} 
+int Gestao\+Alojamentos\+Turisticos.\+Reserva.\+Numero\+Dias\+Estadia\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Obtém o número de dias de estadia. 
+
+Esta propriedade calcula e retorna a diferença entre a data de fim e a data de início. 
+
+Definido na linha \textbf{ 154} do ficheiro \textbf{ Reserva.\+cs}.
+
+\index{GestaoAlojamentosTuristicos.Reserva@{GestaoAlojamentosTuristicos.Reserva}!PrecoTotal@{PrecoTotal}}
+\index{PrecoTotal@{PrecoTotal}!GestaoAlojamentosTuristicos.Reserva@{GestaoAlojamentosTuristicos.Reserva}}
+\doxysubsubsection{PrecoTotal}
+{\footnotesize\ttfamily \label{class_gestao_alojamentos_turisticos_1_1_reserva_ad35af2425a3082984ed234468ed04cc1} 
+decimal Gestao\+Alojamentos\+Turisticos.\+Reserva.\+Preco\+Total\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Obtém ou define o preço total da reserva. 
+
+O preço total é calculado com base na quantidade de noites e no preço por noite do alojamento. 
+
+Definido na linha \textbf{ 144} do ficheiro \textbf{ Reserva.\+cs}.
+
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\+:\begin{DoxyCompactItemize}
+\item 
+Gestao\+Alojamentos\+Turisticos/\textbf{ Reserva.\+cs}\end{DoxyCompactItemize}

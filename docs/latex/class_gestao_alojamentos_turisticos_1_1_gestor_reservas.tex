@@ -1,0 +1,195 @@
+\doxysection{Referência à classe Gestao\+Alojamentos\+Turisticos.\+Gestor\+Reservas}
+\label{class_gestao_alojamentos_turisticos_1_1_gestor_reservas}\index{GestaoAlojamentosTuristicos.GestorReservas@{GestaoAlojamentosTuristicos.GestorReservas}}
+
+
+Representa o gestor de reservas no sistema.  
+
+
+\doxysubsubsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Gestor\+Reservas} ()
+\begin{DoxyCompactList}\small\item\em Construtor que inicializa o gestor de reservas com um array vazio. \end{DoxyCompactList}\item 
+int \textbf{ Adicionar\+Reserva} (\textbf{ Reserva} reserva)
+\begin{DoxyCompactList}\small\item\em Adiciona uma nova reserva ao sistema. \end{DoxyCompactList}\item 
+\textbf{ Reserva} \textbf{ Procurar\+Reserva} (int id\+Cliente, int id\+Alojamento)
+\begin{DoxyCompactList}\small\item\em Procura uma reserva no sistema, dado o ID do cliente e o ID do alojamento. \end{DoxyCompactList}\item 
+void \textbf{ Mostrar\+Reserva\+Encontrada} (int id\+Cliente, int id\+Alojamento)
+\begin{DoxyCompactList}\small\item\em Exibe as informações de uma reserva encontrada. \end{DoxyCompactList}\item 
+bool \textbf{ Verificar\+Disponibilidade} (int id\+Alojamento, Date\+Time data\+Inicio, Date\+Time data\+Fim)
+\begin{DoxyCompactList}\small\item\em Verifica a disponibilidade de um alojamento para um intervalo de datas. \end{DoxyCompactList}\item 
+void \textbf{ Listar\+Reservas} ()
+\begin{DoxyCompactList}\small\item\em Lista todas as reservas registadas no sistema. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Representa o gestor de reservas no sistema. 
+
+A classe \doxyref{Gestor\+Reservas}{p. }{class_gestao_alojamentos_turisticos_1_1_gestor_reservas} é responsável por gerir as reservas dos clientes, permitindo adicionar, procurar, verificar a disponibilidade de alojamentos e listar todas as reservas realizadas. 
+
+Definido na linha \textbf{ 25} do ficheiro \textbf{ Gestor\+Reservas.\+cs}.
+
+
+
+\doxysubsection{Documentação dos Construtores \& Destrutor}
+\index{GestaoAlojamentosTuristicos.GestorReservas@{GestaoAlojamentosTuristicos.GestorReservas}!GestorReservas@{GestorReservas}}
+\index{GestorReservas@{GestorReservas}!GestaoAlojamentosTuristicos.GestorReservas@{GestaoAlojamentosTuristicos.GestorReservas}}
+\doxysubsubsection{GestorReservas()}
+{\footnotesize\ttfamily \label{class_gestao_alojamentos_turisticos_1_1_gestor_reservas_a7cc7280b3155b6f4846f1e7c76067000} 
+Gestao\+Alojamentos\+Turisticos.\+Gestor\+Reservas.\+Gestor\+Reservas (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Construtor que inicializa o gestor de reservas com um array vazio. 
+
+Inicializa um array de reservas com o tamanho máximo definido por MAX\+\_\+\+RESERVAS. 
+
+Definido na linha \textbf{ 49} do ficheiro \textbf{ Gestor\+Reservas.\+cs}.
+
+
+
+\doxysubsection{Documentação das funções}
+\index{GestaoAlojamentosTuristicos.GestorReservas@{GestaoAlojamentosTuristicos.GestorReservas}!AdicionarReserva@{AdicionarReserva}}
+\index{AdicionarReserva@{AdicionarReserva}!GestaoAlojamentosTuristicos.GestorReservas@{GestaoAlojamentosTuristicos.GestorReservas}}
+\doxysubsubsection{AdicionarReserva()}
+{\footnotesize\ttfamily \label{class_gestao_alojamentos_turisticos_1_1_gestor_reservas_a3edb56bbb3a471f417d2450d248c3d8f} 
+int Gestao\+Alojamentos\+Turisticos.\+Gestor\+Reservas.\+Adicionar\+Reserva (\begin{DoxyParamCaption}\item[{\textbf{ Reserva}}]{reserva}{}\end{DoxyParamCaption})}
+
+
+
+Adiciona uma nova reserva ao sistema. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em reserva} & A reserva a ser adicionada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Um valor inteiro que indica o sucesso da operação\+: 0 se a reserva for adicionada com sucesso, 1 se o limite de reservas for atingido. 
+\end{DoxyReturn}
+
+
+Definido na linha \textbf{ 61} do ficheiro \textbf{ Gestor\+Reservas.\+cs}.
+
+\index{GestaoAlojamentosTuristicos.GestorReservas@{GestaoAlojamentosTuristicos.GestorReservas}!ListarReservas@{ListarReservas}}
+\index{ListarReservas@{ListarReservas}!GestaoAlojamentosTuristicos.GestorReservas@{GestaoAlojamentosTuristicos.GestorReservas}}
+\doxysubsubsection{ListarReservas()}
+{\footnotesize\ttfamily \label{class_gestao_alojamentos_turisticos_1_1_gestor_reservas_a301ed892578d6109c5d4622ae682be02} 
+void Gestao\+Alojamentos\+Turisticos.\+Gestor\+Reservas.\+Listar\+Reservas (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Lista todas as reservas registadas no sistema. 
+
+Exibe as informações de todas as reservas registadas, caso existam. Caso contrário, exibe uma mensagem informando que não há reservas registadas. 
+
+Definido na linha \textbf{ 148} do ficheiro \textbf{ Gestor\+Reservas.\+cs}.
+
+Grafo de chamadas desta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_gestao_alojamentos_turisticos_1_1_gestor_reservas_a301ed892578d6109c5d4622ae682be02_cgraph}
+\end{center}
+\end{figure}
+\index{GestaoAlojamentosTuristicos.GestorReservas@{GestaoAlojamentosTuristicos.GestorReservas}!MostrarReservaEncontrada@{MostrarReservaEncontrada}}
+\index{MostrarReservaEncontrada@{MostrarReservaEncontrada}!GestaoAlojamentosTuristicos.GestorReservas@{GestaoAlojamentosTuristicos.GestorReservas}}
+\doxysubsubsection{MostrarReservaEncontrada()}
+{\footnotesize\ttfamily \label{class_gestao_alojamentos_turisticos_1_1_gestor_reservas_ac3fb02b1cdd202c127b7a87e6f019c56} 
+void Gestao\+Alojamentos\+Turisticos.\+Gestor\+Reservas.\+Mostrar\+Reserva\+Encontrada (\begin{DoxyParamCaption}\item[{int}]{id\+Cliente}{, }\item[{int}]{id\+Alojamento}{}\end{DoxyParamCaption})}
+
+
+
+Exibe as informações de uma reserva encontrada. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em id\+Cliente} & O ID do cliente que fez a reserva. \\
+\hline
+{\em id\+Alojamento} & O ID do alojamento reservado.\\
+\hline
+\end{DoxyParams}
+Chama o método Procurar\+Reserva para procurar a reserva, e, caso encontrada, exibe as suas informações. 
+
+Definido na linha \textbf{ 100} do ficheiro \textbf{ Gestor\+Reservas.\+cs}.
+
+Grafo de chamadas desta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_gestao_alojamentos_turisticos_1_1_gestor_reservas_ac3fb02b1cdd202c127b7a87e6f019c56_cgraph}
+\end{center}
+\end{figure}
+\index{GestaoAlojamentosTuristicos.GestorReservas@{GestaoAlojamentosTuristicos.GestorReservas}!ProcurarReserva@{ProcurarReserva}}
+\index{ProcurarReserva@{ProcurarReserva}!GestaoAlojamentosTuristicos.GestorReservas@{GestaoAlojamentosTuristicos.GestorReservas}}
+\doxysubsubsection{ProcurarReserva()}
+{\footnotesize\ttfamily \label{class_gestao_alojamentos_turisticos_1_1_gestor_reservas_ac6361713fb39b91cf20fcffc39da858e} 
+\textbf{ Reserva} Gestao\+Alojamentos\+Turisticos.\+Gestor\+Reservas.\+Procurar\+Reserva (\begin{DoxyParamCaption}\item[{int}]{id\+Cliente}{, }\item[{int}]{id\+Alojamento}{}\end{DoxyParamCaption})}
+
+
+
+Procura uma reserva no sistema, dado o ID do cliente e o ID do alojamento. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em id\+Cliente} & O ID do cliente que fez a reserva. \\
+\hline
+{\em id\+Alojamento} & O ID do alojamento reservado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+O objeto \doxyref{Reserva}{p. }{class_gestao_alojamentos_turisticos_1_1_reserva} correspondente ao cliente e alojamento fornecidos, ou null caso não encontre a reserva. 
+\end{DoxyReturn}
+
+
+Definido na linha \textbf{ 81} do ficheiro \textbf{ Gestor\+Reservas.\+cs}.
+
+Grafo de chamadas desta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_gestao_alojamentos_turisticos_1_1_gestor_reservas_ac6361713fb39b91cf20fcffc39da858e_cgraph}
+\end{center}
+\end{figure}
+Este é o diagrama das funções que utilizam esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_gestao_alojamentos_turisticos_1_1_gestor_reservas_ac6361713fb39b91cf20fcffc39da858e_icgraph}
+\end{center}
+\end{figure}
+\index{GestaoAlojamentosTuristicos.GestorReservas@{GestaoAlojamentosTuristicos.GestorReservas}!VerificarDisponibilidade@{VerificarDisponibilidade}}
+\index{VerificarDisponibilidade@{VerificarDisponibilidade}!GestaoAlojamentosTuristicos.GestorReservas@{GestaoAlojamentosTuristicos.GestorReservas}}
+\doxysubsubsection{VerificarDisponibilidade()}
+{\footnotesize\ttfamily \label{class_gestao_alojamentos_turisticos_1_1_gestor_reservas_a6a3b815347c3c3c565b08cf022d8e2c5} 
+bool Gestao\+Alojamentos\+Turisticos.\+Gestor\+Reservas.\+Verificar\+Disponibilidade (\begin{DoxyParamCaption}\item[{int}]{id\+Alojamento}{, }\item[{Date\+Time}]{data\+Inicio}{, }\item[{Date\+Time}]{data\+Fim}{}\end{DoxyParamCaption})}
+
+
+
+Verifica a disponibilidade de um alojamento para um intervalo de datas. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em id\+Alojamento} & O ID do alojamento a ser verificado. \\
+\hline
+{\em data\+Inicio} & A data de início da reserva desejada. \\
+\hline
+{\em data\+Fim} & A data de fim da reserva desejada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Um valor booleano que indica se o alojamento está disponível\+: true se estiver disponível, false se já estiver reservado. 
+\end{DoxyReturn}
+
+
+Definido na linha \textbf{ 124} do ficheiro \textbf{ Gestor\+Reservas.\+cs}.
+
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\+:\begin{DoxyCompactItemize}
+\item 
+Gestao\+Alojamentos\+Turisticos/\textbf{ Gestor\+Reservas.\+cs}\end{DoxyCompactItemize}

@@ -1,0 +1,155 @@
+\doxysection{Referência à classe Gestao\+Alojamentos\+Turisticos.\+Cliente}
+\label{class_gestao_alojamentos_turisticos_1_1_cliente}\index{GestaoAlojamentosTuristicos.Cliente@{GestaoAlojamentosTuristicos.Cliente}}
+
+
+Representa um cliente no sistema.  
+
+
+
+
+Diagrama de heranças da classe Gestao\+Alojamentos\+Turisticos.\+Cliente
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{class_gestao_alojamentos_turisticos_1_1_cliente__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagrama de colaboração para Gestao\+Alojamentos\+Turisticos.\+Cliente\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{class_gestao_alojamentos_turisticos_1_1_cliente__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Cliente} (string nome, Date\+Time data\+Nascimento, string numero\+Identificacao, string email, string telefone)
+\begin{DoxyCompactList}\small\item\em Construtor que inicializa um cliente. \end{DoxyCompactList}\item 
+int \textbf{ Get\+Id\+Cliente} ()
+\begin{DoxyCompactList}\small\item\em Obtém o identificador único do cliente. \end{DoxyCompactList}\item 
+override void \textbf{ Exibir\+Informacoes} ()
+\begin{DoxyCompactList}\small\item\em Exibe as informações do cliente no console. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Membros públicos herdados de \textbf{ Gestao\+Alojamentos\+Turisticos.\+Pessoa}}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Pessoa} (string nome, Date\+Time data\+Nascimento, string numero\+Identificacao, string telefone, string email)
+\begin{DoxyCompactList}\small\item\em Construtor da classe \doxyref{Pessoa}{p. }{class_gestao_alojamentos_turisticos_1_1_pessoa}. \end{DoxyCompactList}\item 
+int \textbf{ Calcular\+Idade} ()
+\begin{DoxyCompactList}\small\item\em Calcula a idade da pessoa com base na data de nascimento. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Outros membros herdados}
+\doxysubsection*{Propriedades herdados de \textbf{ Gestao\+Alojamentos\+Turisticos.\+Pessoa}}
+\begin{DoxyCompactItemize}
+\item 
+string \textbf{ Nome}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade para acessar o nome da pessoa. \end{DoxyCompactList}\item 
+Date\+Time \textbf{ Data\+Nascimento}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade para acessar a data de nascimento da pessoa. \end{DoxyCompactList}\item 
+string \textbf{ Numero\+Identificacao}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade para acessar o número de identificação da pessoa. \end{DoxyCompactList}\item 
+string \textbf{ Telefone}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade para acessar o telefone da pessoa. \end{DoxyCompactList}\item 
+string \textbf{ Email}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade para acessar o e-\/mail da pessoa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Representa um cliente no sistema. 
+
+A classe \doxyref{Cliente}{p. }{class_gestao_alojamentos_turisticos_1_1_cliente} herda de \doxyref{Pessoa}{p. }{class_gestao_alojamentos_turisticos_1_1_pessoa} e adiciona um identificador único gerado automaticamente para cada cliente. 
+
+Definido na linha \textbf{ 25} do ficheiro \textbf{ Cliente.\+cs}.
+
+
+
+\doxysubsection{Documentação dos Construtores \& Destrutor}
+\index{GestaoAlojamentosTuristicos.Cliente@{GestaoAlojamentosTuristicos.Cliente}!Cliente@{Cliente}}
+\index{Cliente@{Cliente}!GestaoAlojamentosTuristicos.Cliente@{GestaoAlojamentosTuristicos.Cliente}}
+\doxysubsubsection{Cliente()}
+{\footnotesize\ttfamily \label{class_gestao_alojamentos_turisticos_1_1_cliente_ace90621c214fae4bab22cf9f8088be36} 
+Gestao\+Alojamentos\+Turisticos.\+Cliente.\+Cliente (\begin{DoxyParamCaption}\item[{string}]{nome}{, }\item[{Date\+Time}]{data\+Nascimento}{, }\item[{string}]{numero\+Identificacao}{, }\item[{string}]{email}{, }\item[{string}]{telefone}{}\end{DoxyParamCaption})}
+
+
+
+Construtor que inicializa um cliente. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em nome} & Nome do cliente. \\
+\hline
+{\em data\+Nascimento} & Data de nascimento do cliente. \\
+\hline
+{\em numero\+Identificacao} & Número de identificação (ex.\+: BI, NIF, etc.). \\
+\hline
+{\em email} & Email do cliente. \\
+\hline
+{\em telefone} & Número de telefone do cliente.\\
+\hline
+\end{DoxyParams}
+Este construtor também atribui um identificador único ao cliente. 
+
+Definido na linha \textbf{ 49} do ficheiro \textbf{ Cliente.\+cs}.
+
+
+
+\doxysubsection{Documentação das funções}
+\index{GestaoAlojamentosTuristicos.Cliente@{GestaoAlojamentosTuristicos.Cliente}!ExibirInformacoes@{ExibirInformacoes}}
+\index{ExibirInformacoes@{ExibirInformacoes}!GestaoAlojamentosTuristicos.Cliente@{GestaoAlojamentosTuristicos.Cliente}}
+\doxysubsubsection{ExibirInformacoes()}
+{\footnotesize\ttfamily \label{class_gestao_alojamentos_turisticos_1_1_cliente_a6ef092f1fa84cb436cbc640afe62be87} 
+override void Gestao\+Alojamentos\+Turisticos.\+Cliente.\+Exibir\+Informacoes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Exibe as informações do cliente no console. 
+
+Este método sobrescreve o método Exibir\+Informacoes da classe base \doxyref{Pessoa}{p. }{class_gestao_alojamentos_turisticos_1_1_pessoa}, adicionando o ID do cliente. 
+
+Reimplementado de \textbf{ Gestao\+Alojamentos\+Turisticos.\+Pessoa} \doxyref{}{p. }{class_gestao_alojamentos_turisticos_1_1_pessoa_a528932e2d8332c2735859a221d1f640f}.
+
+
+
+Definido na linha \textbf{ 77} do ficheiro \textbf{ Cliente.\+cs}.
+
+Este é o diagrama das funções que utilizam esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_gestao_alojamentos_turisticos_1_1_cliente_a6ef092f1fa84cb436cbc640afe62be87_icgraph}
+\end{center}
+\end{figure}
+\index{GestaoAlojamentosTuristicos.Cliente@{GestaoAlojamentosTuristicos.Cliente}!GetIdCliente@{GetIdCliente}}
+\index{GetIdCliente@{GetIdCliente}!GestaoAlojamentosTuristicos.Cliente@{GestaoAlojamentosTuristicos.Cliente}}
+\doxysubsubsection{GetIdCliente()}
+{\footnotesize\ttfamily \label{class_gestao_alojamentos_turisticos_1_1_cliente_a0a0d6fadcc648394edd2a7e45753010a} 
+int Gestao\+Alojamentos\+Turisticos.\+Cliente.\+Get\+Id\+Cliente (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Obtém o identificador único do cliente. 
+
+\begin{DoxyReturn}{Retorna}
+O ID do cliente. 
+\end{DoxyReturn}
+
+
+Definido na linha \textbf{ 66} do ficheiro \textbf{ Cliente.\+cs}.
+
+Este é o diagrama das funções que utilizam esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_gestao_alojamentos_turisticos_1_1_cliente_a0a0d6fadcc648394edd2a7e45753010a_icgraph}
+\end{center}
+\end{figure}
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\+:\begin{DoxyCompactItemize}
+\item 
+Gestao\+Alojamentos\+Turisticos/\textbf{ Cliente.\+cs}\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="GestaoAlojamentosTuristicos.GestorReservas.ProcurarReserva" name="GestaoAlojamentosTuristicos.GestorReservas.ProcurarReserva">
+<area shape="rect" id="Node000001" title="Procura uma reserva no sistema, dado o ID do cliente e o ID do alojamento." alt="" coords="333,5,551,48"/>
+<area shape="rect" id="Node000002" href="$class_gestao_alojamentos_turisticos_1_1_gestor_reservas.html#ac3fb02b1cdd202c127b7a87e6f019c56" title="Exibe as informações de uma reserva encontrada." alt="" coords="5,5,285,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="317,29,285,29,285,24,317,24"/>
+</map>

@@ -1,0 +1,209 @@
+\doxysection{Referência à classe Gestao\+Alojamentos\+Turisticos.\+Pessoa}
+\label{class_gestao_alojamentos_turisticos_1_1_pessoa}\index{GestaoAlojamentosTuristicos.Pessoa@{GestaoAlojamentosTuristicos.Pessoa}}
+
+
+Representa uma pessoa com dados pessoais.  
+
+
+
+
+Diagrama de heranças da classe Gestao\+Alojamentos\+Turisticos.\+Pessoa
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{class_gestao_alojamentos_turisticos_1_1_pessoa__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Pessoa} (string nome, Date\+Time data\+Nascimento, string numero\+Identificacao, string telefone, string email)
+\begin{DoxyCompactList}\small\item\em Construtor da classe \doxyref{Pessoa}{p. }{class_gestao_alojamentos_turisticos_1_1_pessoa}. \end{DoxyCompactList}\item 
+virtual void \textbf{ Exibir\+Informacoes} ()
+\begin{DoxyCompactList}\small\item\em Exibe as informações completas da pessoa. \end{DoxyCompactList}\item 
+int \textbf{ Calcular\+Idade} ()
+\begin{DoxyCompactList}\small\item\em Calcula a idade da pessoa com base na data de nascimento. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Propriedades}
+\begin{DoxyCompactItemize}
+\item 
+string \textbf{ Nome}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade para acessar o nome da pessoa. \end{DoxyCompactList}\item 
+Date\+Time \textbf{ Data\+Nascimento}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade para acessar a data de nascimento da pessoa. \end{DoxyCompactList}\item 
+string \textbf{ Numero\+Identificacao}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade para acessar o número de identificação da pessoa. \end{DoxyCompactList}\item 
+string \textbf{ Telefone}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade para acessar o telefone da pessoa. \end{DoxyCompactList}\item 
+string \textbf{ Email}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade para acessar o e-\/mail da pessoa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Representa uma pessoa com dados pessoais. 
+
+A classe \doxyref{Pessoa}{p. }{class_gestao_alojamentos_turisticos_1_1_pessoa} contém informações como nome, data de nascimento, número de identificação, telefone e e-\/mail. Além disso, tem métodos para calcular a idade da pessoa e exibir os dados. 
+
+Definido na linha \textbf{ 24} do ficheiro \textbf{ Pessoa.\+cs}.
+
+
+
+\doxysubsection{Documentação dos Construtores \& Destrutor}
+\index{GestaoAlojamentosTuristicos.Pessoa@{GestaoAlojamentosTuristicos.Pessoa}!Pessoa@{Pessoa}}
+\index{Pessoa@{Pessoa}!GestaoAlojamentosTuristicos.Pessoa@{GestaoAlojamentosTuristicos.Pessoa}}
+\doxysubsubsection{Pessoa()}
+{\footnotesize\ttfamily \label{class_gestao_alojamentos_turisticos_1_1_pessoa_a41617a5b0773dd31624c431483e0e025} 
+Gestao\+Alojamentos\+Turisticos.\+Pessoa.\+Pessoa (\begin{DoxyParamCaption}\item[{string}]{nome}{, }\item[{Date\+Time}]{data\+Nascimento}{, }\item[{string}]{numero\+Identificacao}{, }\item[{string}]{telefone}{, }\item[{string}]{email}{}\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \doxyref{Pessoa}{p. }{class_gestao_alojamentos_turisticos_1_1_pessoa}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em nome} & O nome da pessoa. \\
+\hline
+{\em data\+Nascimento} & A data de nascimento da pessoa. \\
+\hline
+{\em numero\+Identificacao} & O número de identificação da pessoa. \\
+\hline
+{\em telefone} & O número de telefone da pessoa. \\
+\hline
+{\em email} & O e-\/mail da pessoa.\\
+\hline
+\end{DoxyParams}
+Este construtor inicializa a classe \doxyref{Pessoa}{p. }{class_gestao_alojamentos_turisticos_1_1_pessoa} com os valores fornecidos para nome, data de nascimento, número de identificação, telefone e e-\/mail. 
+
+Definido na linha \textbf{ 63} do ficheiro \textbf{ Pessoa.\+cs}.
+
+
+
+\doxysubsection{Documentação das funções}
+\index{GestaoAlojamentosTuristicos.Pessoa@{GestaoAlojamentosTuristicos.Pessoa}!CalcularIdade@{CalcularIdade}}
+\index{CalcularIdade@{CalcularIdade}!GestaoAlojamentosTuristicos.Pessoa@{GestaoAlojamentosTuristicos.Pessoa}}
+\doxysubsubsection{CalcularIdade()}
+{\footnotesize\ttfamily \label{class_gestao_alojamentos_turisticos_1_1_pessoa_a89c414927454d4b9494b173e0aea0327} 
+int Gestao\+Alojamentos\+Turisticos.\+Pessoa.\+Calcular\+Idade (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Calcula a idade da pessoa com base na data de nascimento. 
+
+\begin{DoxyReturn}{Retorna}
+A idade da pessoa em anos.
+\end{DoxyReturn}
+Este método calcula a idade considerando se a pessoa já fez aniversário no ano atual. 
+
+Definido na linha \textbf{ 156} do ficheiro \textbf{ Pessoa.\+cs}.
+
+\index{GestaoAlojamentosTuristicos.Pessoa@{GestaoAlojamentosTuristicos.Pessoa}!ExibirInformacoes@{ExibirInformacoes}}
+\index{ExibirInformacoes@{ExibirInformacoes}!GestaoAlojamentosTuristicos.Pessoa@{GestaoAlojamentosTuristicos.Pessoa}}
+\doxysubsubsection{ExibirInformacoes()}
+{\footnotesize\ttfamily \label{class_gestao_alojamentos_turisticos_1_1_pessoa_a528932e2d8332c2735859a221d1f640f} 
+virtual void Gestao\+Alojamentos\+Turisticos.\+Pessoa.\+Exibir\+Informacoes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Exibe as informações completas da pessoa. 
+
+Este método exibe o nome, data de nascimento, idade, número de identificação, telefone e e-\/mail da pessoa. A idade é calculada utilizando o método \doxyref{Calcular\+Idade()}{p. }{class_gestao_alojamentos_turisticos_1_1_pessoa_a89c414927454d4b9494b173e0aea0327}. 
+
+Reimplementado em \textbf{ Gestao\+Alojamentos\+Turisticos.\+Cliente} \doxyref{}{p. }{class_gestao_alojamentos_turisticos_1_1_cliente_a6ef092f1fa84cb436cbc640afe62be87}.
+
+
+
+Definido na linha \textbf{ 139} do ficheiro \textbf{ Pessoa.\+cs}.
+
+
+
+\doxysubsection{Documentação das propriedades}
+\index{GestaoAlojamentosTuristicos.Pessoa@{GestaoAlojamentosTuristicos.Pessoa}!DataNascimento@{DataNascimento}}
+\index{DataNascimento@{DataNascimento}!GestaoAlojamentosTuristicos.Pessoa@{GestaoAlojamentosTuristicos.Pessoa}}
+\doxysubsubsection{DataNascimento}
+{\footnotesize\ttfamily \label{class_gestao_alojamentos_turisticos_1_1_pessoa_a7bfe68b900e4aba83e4bf38692008f80} 
+Date\+Time Gestao\+Alojamentos\+Turisticos.\+Pessoa.\+Data\+Nascimento\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Propriedade para acessar a data de nascimento da pessoa. 
+
+\begin{DoxyReturn}{Retorna}
+A data de nascimento da pessoa. 
+\end{DoxyReturn}
+
+
+Definido na linha \textbf{ 96} do ficheiro \textbf{ Pessoa.\+cs}.
+
+\index{GestaoAlojamentosTuristicos.Pessoa@{GestaoAlojamentosTuristicos.Pessoa}!Email@{Email}}
+\index{Email@{Email}!GestaoAlojamentosTuristicos.Pessoa@{GestaoAlojamentosTuristicos.Pessoa}}
+\doxysubsubsection{Email}
+{\footnotesize\ttfamily \label{class_gestao_alojamentos_turisticos_1_1_pessoa_a5f5b9e8dbdca4971902adafd25aaec7b} 
+string Gestao\+Alojamentos\+Turisticos.\+Pessoa.\+Email\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Propriedade para acessar o e-\/mail da pessoa. 
+
+\begin{DoxyReturn}{Retorna}
+O e-\/mail da pessoa. 
+\end{DoxyReturn}
+
+
+Definido na linha \textbf{ 126} do ficheiro \textbf{ Pessoa.\+cs}.
+
+\index{GestaoAlojamentosTuristicos.Pessoa@{GestaoAlojamentosTuristicos.Pessoa}!Nome@{Nome}}
+\index{Nome@{Nome}!GestaoAlojamentosTuristicos.Pessoa@{GestaoAlojamentosTuristicos.Pessoa}}
+\doxysubsubsection{Nome}
+{\footnotesize\ttfamily \label{class_gestao_alojamentos_turisticos_1_1_pessoa_acc7a3b1001faedc1add6790f3405df83} 
+string Gestao\+Alojamentos\+Turisticos.\+Pessoa.\+Nome\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Propriedade para acessar o nome da pessoa. 
+
+\begin{DoxyReturn}{Retorna}
+O nome da pessoa. 
+\end{DoxyReturn}
+
+
+Definido na linha \textbf{ 86} do ficheiro \textbf{ Pessoa.\+cs}.
+
+\index{GestaoAlojamentosTuristicos.Pessoa@{GestaoAlojamentosTuristicos.Pessoa}!NumeroIdentificacao@{NumeroIdentificacao}}
+\index{NumeroIdentificacao@{NumeroIdentificacao}!GestaoAlojamentosTuristicos.Pessoa@{GestaoAlojamentosTuristicos.Pessoa}}
+\doxysubsubsection{NumeroIdentificacao}
+{\footnotesize\ttfamily \label{class_gestao_alojamentos_turisticos_1_1_pessoa_ac890881a0e6fe357199f7b05684abac4} 
+string Gestao\+Alojamentos\+Turisticos.\+Pessoa.\+Numero\+Identificacao\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Propriedade para acessar o número de identificação da pessoa. 
+
+\begin{DoxyReturn}{Retorna}
+O número de identificação da pessoa. 
+\end{DoxyReturn}
+
+
+Definido na linha \textbf{ 106} do ficheiro \textbf{ Pessoa.\+cs}.
+
+\index{GestaoAlojamentosTuristicos.Pessoa@{GestaoAlojamentosTuristicos.Pessoa}!Telefone@{Telefone}}
+\index{Telefone@{Telefone}!GestaoAlojamentosTuristicos.Pessoa@{GestaoAlojamentosTuristicos.Pessoa}}
+\doxysubsubsection{Telefone}
+{\footnotesize\ttfamily \label{class_gestao_alojamentos_turisticos_1_1_pessoa_a322d5807957a36cdf54f255f61b64505} 
+string Gestao\+Alojamentos\+Turisticos.\+Pessoa.\+Telefone\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Propriedade para acessar o telefone da pessoa. 
+
+\begin{DoxyReturn}{Retorna}
+O telefone da pessoa. 
+\end{DoxyReturn}
+
+
+Definido na linha \textbf{ 116} do ficheiro \textbf{ Pessoa.\+cs}.
+
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\+:\begin{DoxyCompactItemize}
+\item 
+Gestao\+Alojamentos\+Turisticos/\textbf{ Pessoa.\+cs}\end{DoxyCompactItemize}

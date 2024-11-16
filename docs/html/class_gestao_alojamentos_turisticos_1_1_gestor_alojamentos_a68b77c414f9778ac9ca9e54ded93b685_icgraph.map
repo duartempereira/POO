@@ -1,0 +1,5 @@
+<map id="GestaoAlojamentosTuristicos.GestorAlojamentos.ProcurarAlojamento" name="GestaoAlojamentosTuristicos.GestorAlojamentos.ProcurarAlojamento">
+<area shape="rect" id="Node000001" title="Procura um alojamento no sistema pelo seu ID." alt="" coords="299,13,549,56"/>
+<area shape="rect" id="Node000002" href="$class_gestao_alojamentos_turisticos_1_1_gestor_alojamentos.html#a8e0847a3ae82d2d19866cf26da9b5f66" title="Exibe as informações de um alojamento procurado pelo seu ID." alt="" coords="5,5,251,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="283,37,251,37,251,32,283,32"/>
+</map>

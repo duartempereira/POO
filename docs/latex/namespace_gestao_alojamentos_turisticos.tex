@@ -1,0 +1,100 @@
+\doxysection{Referência ao namespace Gestao\+Alojamentos\+Turisticos}
+\label{namespace_gestao_alojamentos_turisticos}\index{GestaoAlojamentosTuristicos@{GestaoAlojamentosTuristicos}}
+\doxysubsubsection*{Componentes}
+\begin{DoxyCompactItemize}
+\item 
+class \textbf{ Alojamento}
+\begin{DoxyCompactList}\small\item\em Representa um alojamento turístico com diversas informações. \end{DoxyCompactList}\item 
+class \textbf{ Cliente}
+\begin{DoxyCompactList}\small\item\em Representa um cliente no sistema. \end{DoxyCompactList}\item 
+class \textbf{ Gestor\+Alojamentos}
+\begin{DoxyCompactList}\small\item\em Representa o gestor de alojamentos no sistema. \end{DoxyCompactList}\item 
+class \textbf{ Gestor\+Clientes}
+\begin{DoxyCompactList}\small\item\em Representa o gestor de clientes no sistema. \end{DoxyCompactList}\item 
+class \textbf{ Gestor\+Reservas}
+\begin{DoxyCompactList}\small\item\em Representa o gestor de reservas no sistema. \end{DoxyCompactList}\item 
+class \textbf{ Pessoa}
+\begin{DoxyCompactList}\small\item\em Representa uma pessoa com dados pessoais. \end{DoxyCompactList}\item 
+class {\bfseries Program}
+\begin{DoxyCompactList}\small\item\em Contém o método principal que executa a lógica do sistema. \end{DoxyCompactList}\item 
+class \textbf{ Reserva}
+\begin{DoxyCompactList}\small\item\em Representa uma reserva de alojamento feita por um cliente. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerações}
+\begin{DoxyCompactItemize}
+\item 
+enum \textbf{ Tipo} \{ \newline
+\textbf{ Apartamento}
+, \textbf{ Casa}
+, \textbf{ Quarto}
+, \textbf{ Hotel}
+, \newline
+\textbf{ Hostel}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeração que define os tipos de alojamento. \end{DoxyCompactList}\item 
+enum \textbf{ Estado\+Alojamento} \{ \textbf{ Disponivel}
+, \textbf{ Ocupado}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeração que define os estados possíveis de um alojamento. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentação dos valores da enumeração}
+\index{GestaoAlojamentosTuristicos@{GestaoAlojamentosTuristicos}!EstadoAlojamento@{EstadoAlojamento}}
+\index{EstadoAlojamento@{EstadoAlojamento}!GestaoAlojamentosTuristicos@{GestaoAlojamentosTuristicos}}
+\doxysubsubsection{EstadoAlojamento}
+{\footnotesize\ttfamily \label{namespace_gestao_alojamentos_turisticos_a633a2543615cfc599b0c7b1c19ad82e5} 
+enum \textbf{ Gestao\+Alojamentos\+Turisticos.\+Estado\+Alojamento}}
+
+
+
+Enumeração que define os estados possíveis de um alojamento. 
+
+\begin{DoxyEnumFields}[2]{Valores de enumerações}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Disponivel@{Disponivel}!GestaoAlojamentosTuristicos@{GestaoAlojamentosTuristicos}}\index{GestaoAlojamentosTuristicos@{GestaoAlojamentosTuristicos}!Disponivel@{Disponivel}}}\label{namespace_gestao_alojamentos_turisticos_a633a2543615cfc599b0c7b1c19ad82e5} 
+Disponivel&O alojamento está disponível. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Ocupado@{Ocupado}!GestaoAlojamentosTuristicos@{GestaoAlojamentosTuristicos}}\index{GestaoAlojamentosTuristicos@{GestaoAlojamentosTuristicos}!Ocupado@{Ocupado}}}\label{namespace_gestao_alojamentos_turisticos_a633a2543615cfc599b0c7b1c19ad82e5} 
+Ocupado&O alojamento está ocupado. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definido na linha \textbf{ 36} do ficheiro \textbf{ Alojamento.\+cs}.
+
+\index{GestaoAlojamentosTuristicos@{GestaoAlojamentosTuristicos}!Tipo@{Tipo}}
+\index{Tipo@{Tipo}!GestaoAlojamentosTuristicos@{GestaoAlojamentosTuristicos}}
+\doxysubsubsection{Tipo}
+{\footnotesize\ttfamily \label{namespace_gestao_alojamentos_turisticos_a92551ba3d86965a71505e63898a2cbf1} 
+enum \textbf{ Gestao\+Alojamentos\+Turisticos.\+Tipo}}
+
+
+
+Enumeração que define os tipos de alojamento. 
+
+\begin{DoxyEnumFields}[2]{Valores de enumerações}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Apartamento@{Apartamento}!GestaoAlojamentosTuristicos@{GestaoAlojamentosTuristicos}}\index{GestaoAlojamentosTuristicos@{GestaoAlojamentosTuristicos}!Apartamento@{Apartamento}}}\label{namespace_gestao_alojamentos_turisticos_a92551ba3d86965a71505e63898a2cbf1} 
+Apartamento&Representa um apartamento. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Casa@{Casa}!GestaoAlojamentosTuristicos@{GestaoAlojamentosTuristicos}}\index{GestaoAlojamentosTuristicos@{GestaoAlojamentosTuristicos}!Casa@{Casa}}}\label{namespace_gestao_alojamentos_turisticos_a92551ba3d86965a71505e63898a2cbf1} 
+Casa&Representa uma casa. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Quarto@{Quarto}!GestaoAlojamentosTuristicos@{GestaoAlojamentosTuristicos}}\index{GestaoAlojamentosTuristicos@{GestaoAlojamentosTuristicos}!Quarto@{Quarto}}}\label{namespace_gestao_alojamentos_turisticos_a92551ba3d86965a71505e63898a2cbf1} 
+Quarto&Representa um quarto. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Hotel@{Hotel}!GestaoAlojamentosTuristicos@{GestaoAlojamentosTuristicos}}\index{GestaoAlojamentosTuristicos@{GestaoAlojamentosTuristicos}!Hotel@{Hotel}}}\label{namespace_gestao_alojamentos_turisticos_a92551ba3d86965a71505e63898a2cbf1} 
+Hotel&Representa um hotel. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Hostel@{Hostel}!GestaoAlojamentosTuristicos@{GestaoAlojamentosTuristicos}}\index{GestaoAlojamentosTuristicos@{GestaoAlojamentosTuristicos}!Hostel@{Hostel}}}\label{namespace_gestao_alojamentos_turisticos_a92551ba3d86965a71505e63898a2cbf1} 
+Hostel&Representa um hostel. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definido na linha \textbf{ 23} do ficheiro \textbf{ Alojamento.\+cs}.
+

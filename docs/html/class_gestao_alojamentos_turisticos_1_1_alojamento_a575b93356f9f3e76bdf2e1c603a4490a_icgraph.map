@@ -1,0 +1,7 @@
+<map id="GestaoAlojamentosTuristicos.Alojamento.ExibirInformacoes" name="GestaoAlojamentosTuristicos.Alojamento.ExibirInformacoes">
+<area shape="rect" id="Node000001" title="Exibe informações detalhadas do alojamento na consola." alt="" coords="299,43,495,85"/>
+<area shape="rect" id="Node000002" href="$class_gestao_alojamentos_turisticos_1_1_gestor_alojamentos.html#a6fab29c6cd38aff718246be98a1cdbeb" title="Lista todos os alojamentos registados no sistema." alt="" coords="8,5,248,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="283,51,248,46,249,41,284,46"/>
+<area shape="rect" id="Node000003" href="$class_gestao_alojamentos_turisticos_1_1_gestor_alojamentos.html#a8e0847a3ae82d2d19866cf26da9b5f66" title="Exibe as informações de um alojamento procurado pelo seu ID." alt="" coords="5,72,251,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="284,82,252,87,251,82,283,77"/>
+</map>

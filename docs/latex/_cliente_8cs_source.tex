@@ -1,0 +1,58 @@
+\doxysection{Cliente.\+cs}
+\label{_cliente_8cs_source}\index{GestaoAlojamentosTuristicos/Cliente.cs@{GestaoAlojamentosTuristicos/Cliente.cs}}
+\textbf{ Ir para a documentação deste ficheiro.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{using\ }System;}
+\DoxyCodeLine{00013\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{00014\ \textcolor{keyword}{using\ }System.Linq;}
+\DoxyCodeLine{00015\ \textcolor{keyword}{using\ }System.Text;}
+\DoxyCodeLine{00016\ \textcolor{keyword}{using\ }System.Threading.Tasks;}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{namespace\ }GestaoAlojamentosTuristicos}
+\DoxyCodeLine{00019\ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }Cliente\ :\ Pessoa}
+\DoxyCodeLine{00026\ \ \ \ \ \{}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Attributes}}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{private}\ \textcolor{keywordtype}{int}\ numeroAtualClientes\ =\ 0;}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{int}\ idCliente;}
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Constructors}}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ Cliente(}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ nome,}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ DateTime\ dataNascimento,}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ numeroIdentificacao,}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ email,}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ telefone)}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ :\ base(nome,\ dataNascimento,\ numeroIdentificacao,\ email,\ telefone)}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ idCliente\ =\ ++numeroAtualClientes;\ \textcolor{comment}{//\ Incrementa\ o\ contador\ e\ define\ o\ ID\ único.}}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00059\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Methods}}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ GetIdCliente()}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ idCliente;}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00070\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Overrides}}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{override}\ \textcolor{keywordtype}{void}\ ExibirInformacoes()}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(\$\textcolor{stringliteral}{"{}ID\ Cliente:\ \{idCliente\}"{}});}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ base.ExibirInformacoes();\ \textcolor{comment}{//\ Chama\ o\ método\ da\ classe\ base\ para\ exibir\ informações\ adicionais.}}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00082\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Destructor}}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \string~Cliente()}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00091\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{00092\ \ \ \ \ \}}
+\DoxyCodeLine{00093\ \}}
+
+\end{DoxyCode}

@@ -1,0 +1,5 @@
+<map id="GestaoAlojamentosTuristicos.GestorReservas.ListarReservas" name="GestaoAlojamentosTuristicos.GestorReservas.ListarReservas">
+<area shape="rect" id="Node000001" title="Lista todas as reservas registadas no sistema." alt="" coords="5,5,214,48"/>
+<area shape="rect" id="Node000002" href="$class_gestao_alojamentos_turisticos_1_1_reserva.html#a1156c418c4edd135f4e3e8340cbb0a14" title="Exibe as informações detalhadas sobre a reserva." alt="" coords="262,5,458,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,24,246,24,246,29,214,29"/>
+</map>

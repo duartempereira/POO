@@ -1,0 +1,5 @@
+<map id="GestaoAlojamentosTuristicos.Reserva.Reserva" name="GestaoAlojamentosTuristicos.Reserva.Reserva">
+<area shape="rect" id="Node000001" title="Construtor para a criação de uma nova reserva." alt="" coords="5,5,202,48"/>
+<area shape="rect" id="Node000002" href="$class_gestao_alojamentos_turisticos_1_1_reserva.html#a8346ab5eddc047e98f4796d8c024cd6c" title="Calcula o preço total da reserva com base nas noites de estadia." alt="" coords="250,5,446,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,24,234,24,234,29,202,29"/>
+</map>

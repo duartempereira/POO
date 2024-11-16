@@ -1,0 +1,122 @@
+\doxysection{Gestor\+Reservas.\+cs}
+\label{_gestor_reservas_8cs_source}\index{GestaoAlojamentosTuristicos/GestorReservas.cs@{GestaoAlojamentosTuristicos/GestorReservas.cs}}
+\textbf{ Ir para a documentação deste ficheiro.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{using\ }System;}
+\DoxyCodeLine{00013\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{00014\ \textcolor{keyword}{using\ }System.Linq;}
+\DoxyCodeLine{00015\ \textcolor{keyword}{using\ }System.Text;}
+\DoxyCodeLine{00016\ \textcolor{keyword}{using\ }System.Threading.Tasks;}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{namespace\ }GestaoAlojamentosTuristicos}
+\DoxyCodeLine{00019\ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }GestorReservas}
+\DoxyCodeLine{00026\ \ \ \ \ \{}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Attributes}}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ MAX\_RESERVAS\ =\ 100;}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ Reserva[]\ reservas;}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{int}\ numeroAtualReservas\ =\ 0;}
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Constructors}}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ GestorReservas()}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ reservas\ =\ \textcolor{keyword}{new}\ Reserva[MAX\_RESERVAS];}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Methods}}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ AdicionarReserva(Reserva\ reserva)}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (numeroAtualReservas\ <\ MAX\_RESERVAS)}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ reservas[numeroAtualReservas]\ =\ reserva;}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ numeroAtualReservas++;}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0;\ \textcolor{comment}{//\ Reserva\ adicionada\ com\ sucesso}}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 1;\ \textcolor{comment}{//\ Limite\ de\ reservas\ atingido}}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ Reserva\ ProcurarReserva(\textcolor{keywordtype}{int}\ idCliente,\ \textcolor{keywordtype}{int}\ idAlojamento)}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ numeroAtualReservas;\ i++)}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Verifica\ se\ a\ reserva\ corresponde\ ao\ ID\ do\ cliente\ e\ ID\ do\ alojamento}}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (reservas[i].Cliente.GetIdCliente()\ ==\ idCliente\ \&\&\ reservas[i].AlojamentoReservado.IdAlojamento\ ==\ idAlojamento)}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ reservas[i];\ \textcolor{comment}{//\ Retorna\ a\ reserva\ encontrada}}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{null};\ \textcolor{comment}{//\ Retorna\ null\ caso\ não\ encontre\ a\ reserva}}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ MostrarReservaEncontrada(\textcolor{keywordtype}{int}\ idCliente,\ \textcolor{keywordtype}{int}\ idAlojamento)}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Chama\ o\ método\ ProcurarReserva\ para\ procurar\ a\ reserva}}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \ \ \ \ Reserva\ reservaEncontrada\ =\ ProcurarReserva(idCliente,\ idAlojamento);}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Verifica\ se\ a\ reserva\ foi\ encontrada}}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (reservaEncontrada\ !=\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Exibe\ as\ informações\ da\ reserva\ encontrada}}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ reservaEncontrada.ExibirInformacoes();}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(\textcolor{stringliteral}{"{}Reserva\ não\ encontrada."{}});}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{bool}\ VerificarDisponibilidade(\textcolor{keywordtype}{int}\ idAlojamento,\ DateTime\ dataInicio,\ DateTime\ dataFim)}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Itera\ por\ todas\ as\ reservas\ existentes}}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ numeroAtualReservas;\ i++)}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Reserva\ reserva\ =\ reservas[i];}
+\DoxyCodeLine{00130\ }
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Verifica\ se\ o\ alojamento\ corresponde\ ao\ ID\ fornecido}}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (reserva.AlojamentoReservado.IdAlojamento\ ==\ idAlojamento)}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Verifica\ se\ existe\ sobreposição\ de\ datas}}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (dataInicio\ <\ reserva.DataFim\ \&\&\ dataFim\ >\ reserva.DataInicio)}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};\ \textcolor{comment}{//\ Não\ disponível}}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ \textcolor{comment}{//\ Disponível}}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00143\ }
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ ListarReservas()}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (numeroAtualReservas\ ==\ 0)}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(\textcolor{stringliteral}{"{}Não\ há\ reservas\ registadas."{}});}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(\textcolor{stringliteral}{"{}\(\backslash\)nLista\ de\ Reservas:"{}});}
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ numeroAtualReservas;\ i++)}
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ reservas[i].ExibirInformacoes();\ \textcolor{comment}{//\ Exibe\ informações\ de\ cada\ reserva}}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(\textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/"{}});}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00164\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00166\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Destructor}}
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ \string~GestorReservas()}
+\DoxyCodeLine{00171\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00173\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{00174\ \ \ \ \ \}}
+\DoxyCodeLine{00175\ \}}
+
+\end{DoxyCode}

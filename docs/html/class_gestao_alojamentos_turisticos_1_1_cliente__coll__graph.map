@@ -1,0 +1,5 @@
+<map id="GestaoAlojamentosTuristicos.Cliente" name="GestaoAlojamentosTuristicos.Cliente">
+<area shape="rect" id="Node000001" title="Representa um cliente no sistema." alt="" coords="5,80,202,123"/>
+<area shape="rect" id="Node000002" href="$class_gestao_alojamentos_turisticos_1_1_pessoa.html" title="Representa uma pessoa com dados pessoais." alt="" coords="71,5,136,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,48,106,80,101,80,101,48"/>
+</map>

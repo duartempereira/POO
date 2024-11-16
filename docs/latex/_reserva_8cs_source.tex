@@ -1,0 +1,114 @@
+\doxysection{Reserva.\+cs}
+\label{_reserva_8cs_source}\index{GestaoAlojamentosTuristicos/Reserva.cs@{GestaoAlojamentosTuristicos/Reserva.cs}}
+\textbf{ Ir para a documentação deste ficheiro.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{using\ }System;}
+\DoxyCodeLine{00012\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{00013\ \textcolor{keyword}{using\ }System.Linq;}
+\DoxyCodeLine{00014\ \textcolor{keyword}{using\ }System.Runtime.InteropServices.ComTypes;}
+\DoxyCodeLine{00015\ \textcolor{keyword}{using\ }System.Text;}
+\DoxyCodeLine{00016\ \textcolor{keyword}{using\ }System.Threading.Tasks;}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{namespace\ }GestaoAlojamentosTuristicos}
+\DoxyCodeLine{00019\ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }Reserva}
+\DoxyCodeLine{00026\ \ \ \ \ \{}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Attributes}}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ numeroAtualReservas\ =\ 0;\ }
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{int}\ idReserva;\ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ DateTime\ dataInicio;\ }
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ DateTime\ dataFim;\ }
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ Cliente\ cliente;\ }
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ Alojamento\ alojamentoReservado;\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ decimal\ precoTotal;\ }
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Constructors}}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ Reserva(DateTime\ dataInicio,\ DateTime\ dataFim,\ Cliente\ cliente,\ Alojamento\ alojamentoReservado)}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ idReserva\ =\ ++numeroAtualReservas;\ \textcolor{comment}{//\ Gera\ um\ ID\ único\ para\ cada\ reserva.}}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ DataInicio\ =\ dataInicio;}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ DataFim\ =\ dataFim;}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ Cliente\ =\ cliente;}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ AlojamentoReservado\ =\ alojamentoReservado;}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ PrecoTotal\ =\ CalcularPrecoTotal();\ \textcolor{comment}{//\ Calcula\ o\ preço\ total\ da\ reserva.}}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00056\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Methods}}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ decimal\ CalcularPrecoTotal()}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ numeroNoites\ =\ (dataFim\ -\/\ dataInicio).Days;\ \textcolor{comment}{//\ Calcula\ o\ número\ de\ noites.}}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ numeroNoites\ *\ alojamentoReservado.PrecoPorNoite;\ \textcolor{comment}{//\ Retorna\ o\ preço\ total.}}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ ExibirInformacoes()}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine();}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(\textcolor{stringliteral}{"{}Informações\ da\ Reserva:"{}});}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(\$\textcolor{stringliteral}{"{}ID\ Reserva:\ \{idReserva\}"{}});}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(\$\textcolor{stringliteral}{"{}Cliente:\ \{cliente.Nome\}"{}});}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(\$\textcolor{stringliteral}{"{}Alojamento:\ \{alojamentoReservado.Nome\}"{}});}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(\$\textcolor{stringliteral}{"{}Data\ de\ Início:\ \{dataInicio:dd/MM/yyyy\}"{}});}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(\$\textcolor{stringliteral}{"{}Data\ de\ Fim:\ \{dataFim:dd/MM/yyyy\}"{}});}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(\$\textcolor{stringliteral}{"{}Preço\ Total:\ \{precoTotal:C\}"{}});}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(\$\textcolor{stringliteral}{"{}Número\ de\ Dias:\ \{NumeroDiasEstadia\}"{}});}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00087\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Properties}}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ IdReserva}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ idReserva;\ \}}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ idReserva\ =\ value;\ \}}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ DateTime\ DataInicio}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ dataInicio;\ \}}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ dataInicio\ =\ value;\ \}}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ DateTime\ DataFim}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ dataFim;\ \}}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ dataFim\ =\ value;\ \}}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ Cliente\ Cliente}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ cliente;\ \}}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ cliente\ =\ value;\ \}}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ Alojamento\ AlojamentoReservado}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ alojamentoReservado;\ \}}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ alojamentoReservado\ =\ value;\ \}}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00139\ }
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ decimal\ PrecoTotal}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ precoTotal;\ \}}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ precoTotal\ =\ value;\ \}}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ NumeroDiasEstadia}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}}
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (DataFim\ -\/\ DataInicio).Days;\ \textcolor{comment}{//\ Calcula\ a\ diferença\ em\ dias.}}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00161\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{00162\ }
+\DoxyCodeLine{00163\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Destructor}}
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \string~Reserva()}
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00171\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{00172\ \ \ \ \ \}}
+\DoxyCodeLine{00173\ \}}
+
+\end{DoxyCode}

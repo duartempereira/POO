@@ -1,0 +1,155 @@
+\doxysection{Referência à classe Gestao\+Alojamentos\+Turisticos.\+Gestor\+Clientes}
+\label{class_gestao_alojamentos_turisticos_1_1_gestor_clientes}\index{GestaoAlojamentosTuristicos.GestorClientes@{GestaoAlojamentosTuristicos.GestorClientes}}
+
+
+Representa o gestor de clientes no sistema.  
+
+
+\doxysubsubsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Gestor\+Clientes} ()
+\begin{DoxyCompactList}\small\item\em Construtor que inicializa o gestor de clientes com um array vazio. \end{DoxyCompactList}\item 
+int \textbf{ Adicionar\+Cliente} (\textbf{ Cliente} cliente)
+\begin{DoxyCompactList}\small\item\em Adiciona um novo cliente ao sistema. \end{DoxyCompactList}\item 
+\textbf{ Cliente} \textbf{ Procurar\+Cliente} (string numero\+Identificacao)
+\begin{DoxyCompactList}\small\item\em Procura um cliente no sistema pelo seu número de identificação. \end{DoxyCompactList}\item 
+void \textbf{ Mostrar\+Cliente\+Encontrado} (string numero\+Identificacao)
+\begin{DoxyCompactList}\small\item\em Exibe as informações de um cliente procurado pelo seu número de identificação. \end{DoxyCompactList}\item 
+void \textbf{ Listar\+Clientes} ()
+\begin{DoxyCompactList}\small\item\em Lista todos os clientes registados no sistema. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Representa o gestor de clientes no sistema. 
+
+A classe \doxyref{Gestor\+Clientes}{p. }{class_gestao_alojamentos_turisticos_1_1_gestor_clientes} é responsável por gerir os clientes, permitindo adicionar, procurar, listar clientes e exibir as suas informações no sistema de alojamentos turísticos. 
+
+Definido na linha \textbf{ 25} do ficheiro \textbf{ Gestor\+Clientes.\+cs}.
+
+
+
+\doxysubsection{Documentação dos Construtores \& Destrutor}
+\index{GestaoAlojamentosTuristicos.GestorClientes@{GestaoAlojamentosTuristicos.GestorClientes}!GestorClientes@{GestorClientes}}
+\index{GestorClientes@{GestorClientes}!GestaoAlojamentosTuristicos.GestorClientes@{GestaoAlojamentosTuristicos.GestorClientes}}
+\doxysubsubsection{GestorClientes()}
+{\footnotesize\ttfamily \label{class_gestao_alojamentos_turisticos_1_1_gestor_clientes_a9334fc144c05198c1cededfbb684471a} 
+Gestao\+Alojamentos\+Turisticos.\+Gestor\+Clientes.\+Gestor\+Clientes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Construtor que inicializa o gestor de clientes com um array vazio. 
+
+Inicializa um array de clientes com o tamanho máximo definido por MAX\+\_\+\+CLIENTES. 
+
+Definido na linha \textbf{ 49} do ficheiro \textbf{ Gestor\+Clientes.\+cs}.
+
+
+
+\doxysubsection{Documentação das funções}
+\index{GestaoAlojamentosTuristicos.GestorClientes@{GestaoAlojamentosTuristicos.GestorClientes}!AdicionarCliente@{AdicionarCliente}}
+\index{AdicionarCliente@{AdicionarCliente}!GestaoAlojamentosTuristicos.GestorClientes@{GestaoAlojamentosTuristicos.GestorClientes}}
+\doxysubsubsection{AdicionarCliente()}
+{\footnotesize\ttfamily \label{class_gestao_alojamentos_turisticos_1_1_gestor_clientes_a09e397071625757971ee8ec7975f07d6} 
+int Gestao\+Alojamentos\+Turisticos.\+Gestor\+Clientes.\+Adicionar\+Cliente (\begin{DoxyParamCaption}\item[{\textbf{ Cliente}}]{cliente}{}\end{DoxyParamCaption})}
+
+
+
+Adiciona um novo cliente ao sistema. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em cliente} & O objeto \doxyref{Cliente}{p. }{class_gestao_alojamentos_turisticos_1_1_cliente} que será adicionado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Um valor inteiro que indica o sucesso da operação\+: 0 se o cliente for adicionado com sucesso, 1 se o limite de clientes for atingido. 
+\end{DoxyReturn}
+
+
+Definido na linha \textbf{ 61} do ficheiro \textbf{ Gestor\+Clientes.\+cs}.
+
+\index{GestaoAlojamentosTuristicos.GestorClientes@{GestaoAlojamentosTuristicos.GestorClientes}!ListarClientes@{ListarClientes}}
+\index{ListarClientes@{ListarClientes}!GestaoAlojamentosTuristicos.GestorClientes@{GestaoAlojamentosTuristicos.GestorClientes}}
+\doxysubsubsection{ListarClientes()}
+{\footnotesize\ttfamily \label{class_gestao_alojamentos_turisticos_1_1_gestor_clientes_ab8eb30d8559b611e3e8db94afce7d364} 
+void Gestao\+Alojamentos\+Turisticos.\+Gestor\+Clientes.\+Listar\+Clientes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Lista todos os clientes registados no sistema. 
+
+Exibe as informações de todos os clientes registados, caso existam. Caso contrário, exibe uma mensagem informando que não há clientes registados. 
+
+Definido na linha \textbf{ 122} do ficheiro \textbf{ Gestor\+Clientes.\+cs}.
+
+Grafo de chamadas desta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_gestao_alojamentos_turisticos_1_1_gestor_clientes_ab8eb30d8559b611e3e8db94afce7d364_cgraph}
+\end{center}
+\end{figure}
+\index{GestaoAlojamentosTuristicos.GestorClientes@{GestaoAlojamentosTuristicos.GestorClientes}!MostrarClienteEncontrado@{MostrarClienteEncontrado}}
+\index{MostrarClienteEncontrado@{MostrarClienteEncontrado}!GestaoAlojamentosTuristicos.GestorClientes@{GestaoAlojamentosTuristicos.GestorClientes}}
+\doxysubsubsection{MostrarClienteEncontrado()}
+{\footnotesize\ttfamily \label{class_gestao_alojamentos_turisticos_1_1_gestor_clientes_a9a055c4a5616ea52ae2d28ee48a570ec} 
+void Gestao\+Alojamentos\+Turisticos.\+Gestor\+Clientes.\+Mostrar\+Cliente\+Encontrado (\begin{DoxyParamCaption}\item[{string}]{numero\+Identificacao}{}\end{DoxyParamCaption})}
+
+
+
+Exibe as informações de um cliente procurado pelo seu número de identificação. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em numero\+Identificacao} & O número de identificação do cliente a ser exibido.\\
+\hline
+\end{DoxyParams}
+Chama o método Procurar\+Cliente para procurar o cliente e, caso encontrado, exibe as suas informações. 
+
+Definido na linha \textbf{ 101} do ficheiro \textbf{ Gestor\+Clientes.\+cs}.
+
+Grafo de chamadas desta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_gestao_alojamentos_turisticos_1_1_gestor_clientes_a9a055c4a5616ea52ae2d28ee48a570ec_cgraph}
+\end{center}
+\end{figure}
+\index{GestaoAlojamentosTuristicos.GestorClientes@{GestaoAlojamentosTuristicos.GestorClientes}!ProcurarCliente@{ProcurarCliente}}
+\index{ProcurarCliente@{ProcurarCliente}!GestaoAlojamentosTuristicos.GestorClientes@{GestaoAlojamentosTuristicos.GestorClientes}}
+\doxysubsubsection{ProcurarCliente()}
+{\footnotesize\ttfamily \label{class_gestao_alojamentos_turisticos_1_1_gestor_clientes_a0466cfdafad338c72dead219f24eb06c} 
+\textbf{ Cliente} Gestao\+Alojamentos\+Turisticos.\+Gestor\+Clientes.\+Procurar\+Cliente (\begin{DoxyParamCaption}\item[{string}]{numero\+Identificacao}{}\end{DoxyParamCaption})}
+
+
+
+Procura um cliente no sistema pelo seu número de identificação. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em numero\+Identificacao} & O número de identificação do cliente a ser procurado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+O objeto \doxyref{Cliente}{p. }{class_gestao_alojamentos_turisticos_1_1_cliente} correspondente ao número de identificação fornecido, ou null se o cliente não for encontrado. 
+\end{DoxyReturn}
+
+
+Definido na linha \textbf{ 80} do ficheiro \textbf{ Gestor\+Clientes.\+cs}.
+
+Este é o diagrama das funções que utilizam esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_gestao_alojamentos_turisticos_1_1_gestor_clientes_a0466cfdafad338c72dead219f24eb06c_icgraph}
+\end{center}
+\end{figure}
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\+:\begin{DoxyCompactItemize}
+\item 
+Gestao\+Alojamentos\+Turisticos/\textbf{ Gestor\+Clientes.\+cs}\end{DoxyCompactItemize}

@@ -1,0 +1,115 @@
+\doxysection{Pessoa.\+cs}
+\label{_pessoa_8cs_source}\index{GestaoAlojamentosTuristicos/Pessoa.cs@{GestaoAlojamentosTuristicos/Pessoa.cs}}
+\textbf{ Ir para a documentação deste ficheiro.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{using\ }System;}
+\DoxyCodeLine{00012\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{00013\ \textcolor{keyword}{using\ }System.Linq;}
+\DoxyCodeLine{00014\ \textcolor{keyword}{using\ }System.Text;}
+\DoxyCodeLine{00015\ \textcolor{keyword}{using\ }System.Threading.Tasks;}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{namespace\ }GestaoAlojamentosTuristicos}
+\DoxyCodeLine{00018\ \{}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }Pessoa}
+\DoxyCodeLine{00025\ \ \ \ \ \{}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Attributes}}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{string}\ nome;}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ DateTime\ dataNascimento;}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{string}\ numeroIdentificacao;}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{string}\ telefone;}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{string}\ email;}
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Constructors}}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ Pessoa(}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ nome,}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ DateTime\ dataNascimento,}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ numeroIdentificacao,}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ telefone,}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ email)}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ Nome\ =\ nome;}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ DataNascimento\ =\ dataNascimento;}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ NumeroIdentificacao\ =\ numeroIdentificacao;}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ Telefone\ =\ telefone;}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ Email\ =\ email;}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00076\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Methods}}
+\DoxyCodeLine{00079\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Properties}}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{string}\ Nome}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ nome;\ \}}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ nome\ =\ value;\ \}}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ DateTime\ DataNascimento}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ dataNascimento;\ \}}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ dataNascimento\ =\ value;\ \}}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{string}\ NumeroIdentificacao}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ numeroIdentificacao;\ \}}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ numeroIdentificacao\ =\ value;\ \}}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{string}\ Telefone}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ telefone;\ \}}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ telefone\ =\ value;\ \}}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{string}\ Email}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ email;\ \}}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ email\ =\ value;\ \}}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00131\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00133\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Overrides}}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ ExibirInformacoes()}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(\$\textcolor{stringliteral}{"{}Nome:\ \{Nome\}"{}});}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(\$\textcolor{stringliteral}{"{}Data\ de\ Nascimento:\ \{DataNascimento.ToShortDateString()\}"{}});}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(\$\textcolor{stringliteral}{"{}Idade:\ \{CalcularIdade()\}\ anos"{}});}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(\$\textcolor{stringliteral}{"{}Nº\ Identificação:\ \{NumeroIdentificacao\}"{}});}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(\$\textcolor{stringliteral}{"{}Telefone:\ \{Telefone\}"{}});}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(\$\textcolor{stringliteral}{"{}Email:\ \{Email\}"{}});}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00148\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00150\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ OtherMethods}}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ CalcularIdade()}
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \ \ \ \ DateTime\ hoje\ =\ DateTime.Today;\ \ \textcolor{comment}{//\ Data\ de\ hoje}}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ idade\ =\ hoje.Year\ -\/\ DataNascimento.Year;\ \ \textcolor{comment}{//\ Subtrai\ os\ anos}}
+\DoxyCodeLine{00160\ }
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Verifica\ se\ a\ pessoa\ já\ fez\ aniversário\ este\ ano}}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (hoje.Month\ <\ DataNascimento.Month\ ||\ (hoje.Month\ ==\ DataNascimento.Month\ \&\&\ hoje.Day\ <\ DataNascimento.Day))}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ idade-\/-\/;\ \ \textcolor{comment}{//\ Se\ ainda\ não\ fez\ aniversário,\ subtrai\ 1}}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00166\ }
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ idade;}
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00169\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{00170\ }
+\DoxyCodeLine{00171\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Destructor}}
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ \string~Pessoa()}
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00179\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{00180\ \ \ \ \ \}}
+\DoxyCodeLine{00181\ \}}
+
+\end{DoxyCode}

@@ -1,0 +1,125 @@
+\doxysection{Alojamento.\+cs}
+\label{_alojamento_8cs_source}\index{GestaoAlojamentosTuristicos/Alojamento.cs@{GestaoAlojamentosTuristicos/Alojamento.cs}}
+\textbf{ Ir para a documentação deste ficheiro.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{using\ }System;}
+\DoxyCodeLine{00012\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{00013\ \textcolor{keyword}{using\ }System.Linq;}
+\DoxyCodeLine{00014\ \textcolor{keyword}{using\ }System.Text;}
+\DoxyCodeLine{00015\ \textcolor{keyword}{using\ }System.Threading.Tasks;}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{namespace\ }GestaoAlojamentosTuristicos}
+\DoxyCodeLine{00018\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{enum}\ Tipo}
+\DoxyCodeLine{00024\ \ \ \ \ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ Apartamento,\ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ Casa,\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ Quarto,\ \ \ \ \ \ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ Hotel,\ \ \ \ \ \ \ }
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ Hostel\ \ \ \ \ \ \ }
+\DoxyCodeLine{00030\ \ \ \ \ \}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{enum}\ EstadoAlojamento}
+\DoxyCodeLine{00037\ \ \ \ \ \{}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ Disponivel,\ }
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ Ocupado\ \ \ \ \ }
+\DoxyCodeLine{00040\ \ \ \ \ \}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }Alojamento}
+\DoxyCodeLine{00048\ \ \ \ \ \{}
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Attributes}}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{int}\ idAlojamento;}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{string}\ nome;}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ decimal\ precoPorNoite;}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{string}\ localizacao;}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ Tipo\ tipo;}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ EstadoAlojamento\ estado;}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ numeroAtualAlojamentos\ =\ 0;}
+\DoxyCodeLine{00084\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Constructors}}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ Alojamento(}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ nome,}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ decimal\ precoPorNoite,}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ localizacao,}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \ \ \ \ Tipo\ tipo)}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \ \ \ \ IdAlojamento\ =\ ++numeroAtualAlojamentos;\ \ \textcolor{comment}{//\ Incrementa\ o\ contador\ e\ atribui\ o\ ID}}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \ \ \ \ Nome\ =\ nome;}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \ \ \ \ PrecoPorNoite\ =\ precoPorNoite;}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \ \ \ \ Localizacao\ =\ localizacao;}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \ \ \ \ Tipo\ =\ tipo;}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00106\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Properties}}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ IdAlojamento}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ idAlojamento;\ \}}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ idAlojamento\ =\ value;\ \}}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{string}\ Nome}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ nome;\ \}}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ nome\ =\ value;\ \}}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ decimal\ PrecoPorNoite}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ precoPorNoite;\ \}}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ precoPorNoite\ =\ value;\ \}}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{string}\ Localizacao}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ localizacao;\ \}}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ localizacao\ =\ value;\ \}}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ Tipo\ Tipo}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ tipo;\ \}}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ tipo\ =\ value;\ \}}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00153\ }
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ EstadoAlojamento\ Estado}
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ estado;\ \}}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ estado\ =\ value;\ \}}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00162\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{00163\ }
+\DoxyCodeLine{00164\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Overrides}}
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ ExibirInformacoes()}
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine();\ \ \textcolor{comment}{//\ Adiciona\ uma\ linha\ em\ branco\ para\ separar\ as\ informações\ de\ outros\ alojamentos}}
+\DoxyCodeLine{00171\ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(\textcolor{stringliteral}{"{}Informações\ do\ Alojamento:"{}});}
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(\$\textcolor{stringliteral}{"{}ID\ Alojamento:\ \{IdAlojamento\}"{}});}
+\DoxyCodeLine{00173\ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(\$\textcolor{stringliteral}{"{}Nome:\ \{Nome\}"{}});}
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(\$\textcolor{stringliteral}{"{}Preço\ por\ Noite:\ \{PrecoPorNoite\}\ EUR"{}});}
+\DoxyCodeLine{00175\ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(\$\textcolor{stringliteral}{"{}Localização:\ \{Localizacao\}"{}});}
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(\$\textcolor{stringliteral}{"{}Tipo:\ \{Tipo\}"{}});}
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(\$\textcolor{stringliteral}{"{}Estado:\ \{Estado\}"{}});\ \textcolor{comment}{//\ Mostrar\ estado}}
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00179\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{00180\ }
+\DoxyCodeLine{00181\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ OtherMethods}}
+\DoxyCodeLine{00182\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{00183\ }
+\DoxyCodeLine{00184\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Destructor}}
+\DoxyCodeLine{00188\ \ \ \ \ \ \ \ \ \string~Alojamento()}
+\DoxyCodeLine{00189\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00190\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00191\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{00192\ \ \ \ \ \}}
+\DoxyCodeLine{00193\ \}}
+
+\end{DoxyCode}

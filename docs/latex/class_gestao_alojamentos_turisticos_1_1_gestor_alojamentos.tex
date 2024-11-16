@@ -1,0 +1,155 @@
+\doxysection{Referência à classe Gestao\+Alojamentos\+Turisticos.\+Gestor\+Alojamentos}
+\label{class_gestao_alojamentos_turisticos_1_1_gestor_alojamentos}\index{GestaoAlojamentosTuristicos.GestorAlojamentos@{GestaoAlojamentosTuristicos.GestorAlojamentos}}
+
+
+Representa o gestor de alojamentos no sistema.  
+
+
+\doxysubsubsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Gestor\+Alojamentos} ()
+\begin{DoxyCompactList}\small\item\em Construtor que inicializa o gestor de alojamentos com um array vazio. \end{DoxyCompactList}\item 
+int \textbf{ Adicionar\+Alojamento} (\textbf{ Alojamento} alojamento)
+\begin{DoxyCompactList}\small\item\em Adiciona um novo alojamento ao sistema. \end{DoxyCompactList}\item 
+\textbf{ Alojamento} \textbf{ Procurar\+Alojamento} (int id\+Alojamento)
+\begin{DoxyCompactList}\small\item\em Procura um alojamento no sistema pelo seu ID. \end{DoxyCompactList}\item 
+void \textbf{ Mostrar\+Alojamento\+Encontrado} (int id\+Alojamento)
+\begin{DoxyCompactList}\small\item\em Exibe as informações de um alojamento procurado pelo seu ID. \end{DoxyCompactList}\item 
+void \textbf{ Listar\+Alojamentos} ()
+\begin{DoxyCompactList}\small\item\em Lista todos os alojamentos registados no sistema. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Representa o gestor de alojamentos no sistema. 
+
+A classe \doxyref{Gestor\+Alojamentos}{p. }{class_gestao_alojamentos_turisticos_1_1_gestor_alojamentos} é responsável por gerir os alojamentos, permitindo adicionar, procurar e listar os alojamentos disponíveis no sistema. 
+
+Definido na linha \textbf{ 25} do ficheiro \textbf{ Gestor\+Alojamentos.\+cs}.
+
+
+
+\doxysubsection{Documentação dos Construtores \& Destrutor}
+\index{GestaoAlojamentosTuristicos.GestorAlojamentos@{GestaoAlojamentosTuristicos.GestorAlojamentos}!GestorAlojamentos@{GestorAlojamentos}}
+\index{GestorAlojamentos@{GestorAlojamentos}!GestaoAlojamentosTuristicos.GestorAlojamentos@{GestaoAlojamentosTuristicos.GestorAlojamentos}}
+\doxysubsubsection{GestorAlojamentos()}
+{\footnotesize\ttfamily \label{class_gestao_alojamentos_turisticos_1_1_gestor_alojamentos_a4683552f63c390a55656061916838f3f} 
+Gestao\+Alojamentos\+Turisticos.\+Gestor\+Alojamentos.\+Gestor\+Alojamentos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Construtor que inicializa o gestor de alojamentos com um array vazio. 
+
+Inicializa um array de alojamentos com o tamanho máximo definido por MAX\+\_\+\+ALOJAMENTOS. 
+
+Definido na linha \textbf{ 49} do ficheiro \textbf{ Gestor\+Alojamentos.\+cs}.
+
+
+
+\doxysubsection{Documentação das funções}
+\index{GestaoAlojamentosTuristicos.GestorAlojamentos@{GestaoAlojamentosTuristicos.GestorAlojamentos}!AdicionarAlojamento@{AdicionarAlojamento}}
+\index{AdicionarAlojamento@{AdicionarAlojamento}!GestaoAlojamentosTuristicos.GestorAlojamentos@{GestaoAlojamentosTuristicos.GestorAlojamentos}}
+\doxysubsubsection{AdicionarAlojamento()}
+{\footnotesize\ttfamily \label{class_gestao_alojamentos_turisticos_1_1_gestor_alojamentos_aa1b190e6e423d80f076e52726fb93fa7} 
+int Gestao\+Alojamentos\+Turisticos.\+Gestor\+Alojamentos.\+Adicionar\+Alojamento (\begin{DoxyParamCaption}\item[{\textbf{ Alojamento}}]{alojamento}{}\end{DoxyParamCaption})}
+
+
+
+Adiciona um novo alojamento ao sistema. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em alojamento} & O objeto \doxyref{Alojamento}{p. }{class_gestao_alojamentos_turisticos_1_1_alojamento} que será adicionado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Um valor inteiro que indica o sucesso da operação\+: 0 se o alojamento for adicionado com sucesso, 1 se o limite de alojamentos for atingido. 
+\end{DoxyReturn}
+
+
+Definido na linha \textbf{ 61} do ficheiro \textbf{ Gestor\+Alojamentos.\+cs}.
+
+\index{GestaoAlojamentosTuristicos.GestorAlojamentos@{GestaoAlojamentosTuristicos.GestorAlojamentos}!ListarAlojamentos@{ListarAlojamentos}}
+\index{ListarAlojamentos@{ListarAlojamentos}!GestaoAlojamentosTuristicos.GestorAlojamentos@{GestaoAlojamentosTuristicos.GestorAlojamentos}}
+\doxysubsubsection{ListarAlojamentos()}
+{\footnotesize\ttfamily \label{class_gestao_alojamentos_turisticos_1_1_gestor_alojamentos_a6fab29c6cd38aff718246be98a1cdbeb} 
+void Gestao\+Alojamentos\+Turisticos.\+Gestor\+Alojamentos.\+Listar\+Alojamentos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Lista todos os alojamentos registados no sistema. 
+
+Exibe as informações de todos os alojamentos, se houver algum registado. Caso contrário, informa que não há alojamentos disponíveis. 
+
+Definido na linha \textbf{ 122} do ficheiro \textbf{ Gestor\+Alojamentos.\+cs}.
+
+Grafo de chamadas desta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_gestao_alojamentos_turisticos_1_1_gestor_alojamentos_a6fab29c6cd38aff718246be98a1cdbeb_cgraph}
+\end{center}
+\end{figure}
+\index{GestaoAlojamentosTuristicos.GestorAlojamentos@{GestaoAlojamentosTuristicos.GestorAlojamentos}!MostrarAlojamentoEncontrado@{MostrarAlojamentoEncontrado}}
+\index{MostrarAlojamentoEncontrado@{MostrarAlojamentoEncontrado}!GestaoAlojamentosTuristicos.GestorAlojamentos@{GestaoAlojamentosTuristicos.GestorAlojamentos}}
+\doxysubsubsection{MostrarAlojamentoEncontrado()}
+{\footnotesize\ttfamily \label{class_gestao_alojamentos_turisticos_1_1_gestor_alojamentos_a8e0847a3ae82d2d19866cf26da9b5f66} 
+void Gestao\+Alojamentos\+Turisticos.\+Gestor\+Alojamentos.\+Mostrar\+Alojamento\+Encontrado (\begin{DoxyParamCaption}\item[{int}]{id\+Alojamento}{}\end{DoxyParamCaption})}
+
+
+
+Exibe as informações de um alojamento procurado pelo seu ID. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em id\+Alojamento} & O ID do alojamento a ser exibido.\\
+\hline
+\end{DoxyParams}
+Chama o método Procurar\+Alojamento para procurar o alojamento e, caso encontrado, exibe as suas informações. 
+
+Definido na linha \textbf{ 101} do ficheiro \textbf{ Gestor\+Alojamentos.\+cs}.
+
+Grafo de chamadas desta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_gestao_alojamentos_turisticos_1_1_gestor_alojamentos_a8e0847a3ae82d2d19866cf26da9b5f66_cgraph}
+\end{center}
+\end{figure}
+\index{GestaoAlojamentosTuristicos.GestorAlojamentos@{GestaoAlojamentosTuristicos.GestorAlojamentos}!ProcurarAlojamento@{ProcurarAlojamento}}
+\index{ProcurarAlojamento@{ProcurarAlojamento}!GestaoAlojamentosTuristicos.GestorAlojamentos@{GestaoAlojamentosTuristicos.GestorAlojamentos}}
+\doxysubsubsection{ProcurarAlojamento()}
+{\footnotesize\ttfamily \label{class_gestao_alojamentos_turisticos_1_1_gestor_alojamentos_a68b77c414f9778ac9ca9e54ded93b685} 
+\textbf{ Alojamento} Gestao\+Alojamentos\+Turisticos.\+Gestor\+Alojamentos.\+Procurar\+Alojamento (\begin{DoxyParamCaption}\item[{int}]{id\+Alojamento}{}\end{DoxyParamCaption})}
+
+
+
+Procura um alojamento no sistema pelo seu ID. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em id\+Alojamento} & O ID do alojamento que se deseja procurar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+O objeto \doxyref{Alojamento}{p. }{class_gestao_alojamentos_turisticos_1_1_alojamento} correspondente ao ID fornecido, ou null se o alojamento não for encontrado. 
+\end{DoxyReturn}
+
+
+Definido na linha \textbf{ 80} do ficheiro \textbf{ Gestor\+Alojamentos.\+cs}.
+
+Este é o diagrama das funções que utilizam esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_gestao_alojamentos_turisticos_1_1_gestor_alojamentos_a68b77c414f9778ac9ca9e54ded93b685_icgraph}
+\end{center}
+\end{figure}
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\+:\begin{DoxyCompactItemize}
+\item 
+Gestao\+Alojamentos\+Turisticos/\textbf{ Gestor\+Alojamentos.\+cs}\end{DoxyCompactItemize}

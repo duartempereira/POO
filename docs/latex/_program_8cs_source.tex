@@ -1,0 +1,70 @@
+\doxysection{Program.\+cs}
+\label{_program_8cs_source}\index{GestaoAlojamentosTuristicos/Program.cs@{GestaoAlojamentosTuristicos/Program.cs}}
+\textbf{ Ir para a documentação deste ficheiro.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{using\ }System;}
+\DoxyCodeLine{00012\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{00013\ \textcolor{keyword}{using\ }System.Linq;}
+\DoxyCodeLine{00014\ \textcolor{keyword}{using\ }System.Text;}
+\DoxyCodeLine{00015\ \textcolor{keyword}{using\ }System.Threading.Tasks;}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{namespace\ }GestaoAlojamentosTuristicos}
+\DoxyCodeLine{00018\ \{}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{internal}\ \textcolor{keyword}{class\ }Program}
+\DoxyCodeLine{00025\ \ \ \ \ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ Main(\textcolor{keywordtype}{string}[]\ args)}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 1.\ Inicializar\ os\ gestores\ de\ Clientes,\ Alojamentos\ e\ Reservas}}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ GestorClientes\ gestorClientes\ =\ \textcolor{keyword}{new}\ GestorClientes();}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ GestorAlojamentos\ gestorAlojamentos\ =\ \textcolor{keyword}{new}\ GestorAlojamentos();}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ GestorReservas\ gestorReservas\ =\ \textcolor{keyword}{new}\ GestorReservas();}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 2.\ Adicionar\ Clientes}}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ gestorClientes.AdicionarCliente(\textcolor{keyword}{new}\ Cliente(\textcolor{stringliteral}{"{}Duarte\ Pereira"{}},\ \textcolor{keyword}{new}\ DateTime(2003,\ 11,\ 12),\ \textcolor{stringliteral}{"{}271234567"{}},\ \textcolor{stringliteral}{"{}+351\ 938123456"{}},\ \textcolor{stringliteral}{"{}duarte.pereira@gmail.com"{}}));}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ gestorClientes.AdicionarCliente(\textcolor{keyword}{new}\ Cliente(\textcolor{stringliteral}{"{}Joana\ Barbosa"{}},\ \textcolor{keyword}{new}\ DateTime(2002,\ 5,\ 19),\ \textcolor{stringliteral}{"{}111234567"{}},\ \textcolor{stringliteral}{"{}+351\ 912345678"{}},\ \textcolor{stringliteral}{"{}joana.barbosa@gmail.com"{}}));}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 3.\ Adicionar\ Alojamentos}}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ gestorAlojamentos.AdicionarAlojamento(\textcolor{keyword}{new}\ Alojamento(\textcolor{stringliteral}{"{}Hotel\ Barcelos"{}},\ 75.50m,\ \textcolor{stringliteral}{"{}Barcelos"{}},\ Tipo.Casa));}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ gestorAlojamentos.AdicionarAlojamento(\textcolor{keyword}{new}\ Alojamento(\textcolor{stringliteral}{"{}Hostel\ Porto"{}},\ 50.00m,\ \textcolor{stringliteral}{"{}Porto"{}},\ Tipo.Hostel));}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 4.\ Listar\ todos\ os\ Clientes}}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(\textcolor{stringliteral}{"{}\(\backslash\)n-\/-\/-\/\ Lista\ de\ Clientes\ -\/-\/-\/"{}});}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ gestorClientes.ListarClientes();}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 5.\ Procurar\ e\ Exibir\ Cliente\ por\ Número\ de\ Identificação}}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ numeroIdentificacao\ =\ \textcolor{stringliteral}{"{}271234567"{}};\ \ \textcolor{comment}{//\ Exemplo\ de\ número\ de\ identificação}}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(\$\textcolor{stringliteral}{"{}\(\backslash\)n-\/-\/-\/\ Procurar\ Cliente\ com\ Número\ de\ Identificação:\ \{numeroIdentificacao\}\ -\/-\/-\/"{}});}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ gestorClientes.MostrarClienteEncontrado(numeroIdentificacao);}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 6.\ Procurar\ e\ Exibir\ Alojamento\ por\ ID}}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ idAlojamento\ =\ 1;\ \ \textcolor{comment}{//\ Exemplo\ de\ ID\ de\ alojamento}}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(\$\textcolor{stringliteral}{"{}\(\backslash\)n-\/-\/-\/\ Procurar\ Alojamento\ com\ ID:\ \{idAlojamento\}\ -\/-\/-\/"{}});}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ gestorAlojamentos.MostrarAlojamentoEncontrado(idAlojamento);}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 7.\ Listar\ todos\ os\ Alojamentos}}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(\textcolor{stringliteral}{"{}\(\backslash\)n-\/-\/-\/\ Lista\ de\ Alojamentos\ -\/-\/-\/"{}});}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ gestorAlojamentos.ListarAlojamentos();}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 8.\ Criando\ uma\ Reserva}}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ Cliente\ clienteReserva\ =\ gestorClientes.ProcurarCliente(\textcolor{stringliteral}{"{}271234567"{}});\ \ \textcolor{comment}{//\ Cliente\ para\ a\ reserva}}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ Alojamento\ alojamentoReserva\ =\ gestorAlojamentos.ProcurarAlojamento(idAlojamento);\ \ \textcolor{comment}{//\ Alojamento\ para\ a\ reserva}}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ Reserva\ novaReserva\ =\ \textcolor{keyword}{new}\ Reserva(\textcolor{keyword}{new}\ DateTime(2024,\ 12,\ 20),\ \textcolor{keyword}{new}\ DateTime(2024,\ 12,\ 25),\ clienteReserva,\ alojamentoReserva);\ }
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ gestorReservas.AdicionarReserva(novaReserva);\ \ \textcolor{comment}{//\ Adicionando\ a\ reserva}}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 9.\ Listar\ todas\ as\ Reservas}}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(\textcolor{stringliteral}{"{}\(\backslash\)n-\/-\/-\/\ Lista\ de\ Reservas\ -\/-\/-\/"{}});}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ gestorReservas.ListarReservas();}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 10.\ Procurar\ e\ Exibir\ Reserva\ por\ ID\ Cliente\ e\ ID\ Alojamento}}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(\$\textcolor{stringliteral}{"{}\(\backslash\)n-\/-\/-\/\ Procurar\ Reserva\ para\ Cliente\ ID:\ 1\ e\ Alojamento\ ID:\ \{idAlojamento\}\ -\/-\/-\/"{}});}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ gestorReservas.MostrarReservaEncontrada(1,\ idAlojamento);}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 11.\ Pausar\ o\ programa\ para\ ver\ o\ resultado\ na\ consola}}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(\textcolor{stringliteral}{"{}\(\backslash\)nPressiona\ qualquer\ tecla\ para\ finalizar..."{}});}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ Console.ReadKey();}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00077\ \ \ \ \ \}}
+\DoxyCodeLine{00078\ \}}
+
+\end{DoxyCode}
