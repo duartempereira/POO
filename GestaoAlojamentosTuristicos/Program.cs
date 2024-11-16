@@ -1,4 +1,14 @@
-﻿using System;
+﻿/**
+ * @file Program.cs
+ * @brief Implementação do programa principal para a gestão de clientes, alojamentos e reservas.
+ * @details Este ficheiro contém a lógica principal da aplicação de gestão de alojamentos turísticos. Ele inicializa os gestores de clientes, alojamentos e reservas, e executa uma série de operações como adicionar clientes e alojamentos, listar dados, e criar reservas.
+ * 
+ * @author Duarte "macrogod" Pereira
+ * @date 10/11/2024
+ * @note Este ficheiro faz parte do sistema de Gestão de Alojamentos Turísticos.
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,6 +16,11 @@ using System.Threading.Tasks;
 
 namespace GestaoAlojamentosTuristicos
 {
+    /**
+     * @class Program
+     * @brief Contém o método principal que executa a lógica do sistema.
+     * @details Esta classe gere a execução do programa. Inicializa os gestores de clientes, alojamentos e reservas, realiza operações como a adição de dados, listagem e procura de clientes e alojamentos, e criação de reservas.
+     */
     internal class Program
     {
         static void Main(string[] args)
