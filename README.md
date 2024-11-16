@@ -53,7 +53,7 @@ A implementação foi desenvolvida em **C#** com o objetivo de consolidar concei
 1. Clonar este repositório:
 
    ```bash
-   git clone https://github.com/teu-usuario/POO-Trabalho.git
+   git clone https://github.com/duartempereira/POO.git
 2. Abrir o projeto no Visual Studio ou em qualquer IDE que suporte C#.
 3. Compilar e executar o projeto.
 
